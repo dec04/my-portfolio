@@ -67,7 +67,7 @@ const babelOptions = preset => {
 const plugins = () => {
     const base = [
         new HTMLWebpackPlugin({
-            filename: "./index.php",
+            filename: "./views/index.html",
             template: "./index.html",
             inject: true,
             excludeChunks: [],
@@ -75,12 +75,19 @@ const plugins = () => {
                 collapseWhitespace: isProdMode
             }
         }),
-        new CleanWebpackPlugin(),
+        new CleanWebpackPlugin({
+            verbose: isDevMode,
+            cleanOnceBeforeBuildPatterns: [path.join(__dirname, 'dist/**/*')]
+        }),
         new CopyWebpackPlugin({
             patterns: [
                 {
                     from: path.resolve(__dirname, "src/favicon.ico"),
                     to: path.resolve(__dirname, "dist")
+                },
+                {
+                    from: path.resolve(__dirname, "src/back/"),
+                    to: path.resolve(__dirname, "dist/")
                 }
             ]
         }),
@@ -112,7 +119,8 @@ module.exports = {
     },
     output: {
         filename: filename("js"),
-        path: path.resolve(__dirname, "dist")
+        path: path.resolve(__dirname, "dist/public/"),
+        publicPath: "/public/"
     },
     resolve: {
         extensions: [".js", ".json", ".xml"],
@@ -147,11 +155,21 @@ module.exports = {
             },
             {
                 test: /\.(png|jpeg|jpg|gif|svg)$/,
-                use: ["file-loader"]
+                loader: {
+                    loader: "file-loader",
+                    options: {
+                        name: "./images/[name].[ext]",
+                    }
+                }
             },
             {
                 test: /\.(ttf|woff|woff2|eot)$/,
-                use: ["file-loader"]
+                loader: {
+                    loader: "file-loader",
+                    options: {
+                        name: "./fonts/[name].[ext]",
+                    }
+                }
             },
             {
                 test: /\.xml$/,
