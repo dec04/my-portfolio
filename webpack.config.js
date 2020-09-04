@@ -68,7 +68,7 @@ const plugins = () => {
     const base = [
         new HTMLWebpackPlugin({
             filename: "./views/index.html",
-            template: "./index.html",
+            template: "./views/index.html",
             inject: true,
             excludeChunks: [],
             minify: {
@@ -115,7 +115,8 @@ module.exports = {
             "@babel/polyfill",
             "./js/app.js"
         ],
-        debug: "./js/AppDebug.js"
+        debug: "./js/AppDebug.js",
+        bootstrap: "./js/bootstrap.js"
     },
     output: {
         filename: filename("js"),

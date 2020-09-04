@@ -12,5 +12,5 @@ app.get("/", (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log("App listening 8000")
+    console.log("App start on port 8000")
 })
