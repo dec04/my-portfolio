@@ -1,13 +1,34 @@
+@import "Montserrat.css";
+
 $border: 1px solid #ccc;
+$headerHeight: 260px !important;
 
-.wp-card-less {
-  padding: 1rem;
-  border-radius: 5px;
-  margin-top: 1rem;
-  border: $border;
-
-  h2 {
-    text-align: center;
-    color: darkmagenta;
-  }
+//region App
+.background-img {
+  position: absolute;
+  z-index: -1;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden;
+  background-color: #000;
 }
+
+.header {
+  height: $headerHeight;
+}
+
+.circle-img {
+  border: #cccccc;
+  border-radius: 50px;
+  height: 100%;
+}
+
+//endregion
+
+//region Common
+.size-64 {
+  width: 64px !important;
+  height: 64px !important;
+}
+
+//endregion
