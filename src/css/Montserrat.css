@@ -7,3 +7,8 @@
     font-family: "Monserat-black-i";
     src: url("../assets/fonts/Montserrat-BlackItalic.ttf");
 }
+
+@font-face {
+    font-family: "Monserat-regular";
+    src: url("../assets/fonts/Montserrat-Regular.ttf");
+}

@@ -116,7 +116,8 @@ module.exports = {
             "./js/app.js"
         ],
         debug: "./js/AppDebug.js",
-        bootstrap: "./js/bootstrap.js"
+        bootstrap: "./js/bootstrap.js",
+        fontawesome: "./js/fontawesome.js"
     },
     output: {
         filename: filename("js"),

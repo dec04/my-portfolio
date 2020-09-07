@@ -1,16 +1,28 @@
 @import "Montserrat.css";
+@import "Insolata.css";
 
 $border: 1px solid #ccc;
-$headerHeight: 260px !important;
+$headerHeight: 300px !important;
+$themeTextCommonColor: #959595;
+$themeTextPrimaryColor: #5934c5;
+$themeTextSecondaryColor: #f4e11e;
+$themeRoadmapBorderColor: #5934c5;
+$sectionMinHeight: 600px;
 
 //region App
-.background-img {
+.main {
   position: absolute;
   z-index: -1;
   width: 100% !important;
   height: 100% !important;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: #000;
+
+  font-family: Monserat-regular, sans-serif;
+
+  .container-fluid {
+    padding: 0 !important;
+  }
 }
 
 .header {
@@ -23,6 +35,94 @@ $headerHeight: 260px !important;
   height: 100%;
 }
 
+//region About section
+#roadmap-section {
+  color: $themeTextCommonColor;
+  min-height: $sectionMinHeight !important;
+  //margin-bottom: 12px;
+
+  p {
+    font-family: Insolata-Medium, sans-serif;
+    font-size: 2.4rem;
+    color: #ddd;
+  }
+
+  .svg-scroll-wrapper {
+    position: relative;
+    background-color: black;
+    left: -60px;
+    top: $sectionMinHeight / 2;
+    width: 50px;
+
+    span {
+      position: absolute;
+      left: -52px;
+      transform: rotate(-90deg) !important;
+      color: $themeTextPrimaryColor;
+      background-color: transparent;
+      -webkit-box-shadow: 24px 0 40px -5px #5834c5;
+      -moz-box-shadow: 0 24px 40px -5px #5834c5;
+      box-shadow: 0 24px 40px -5px #5834c5;
+    }
+
+    img.scroll {
+      position: relative;
+      top: -1px;
+      width: 24px;
+      height: auto;
+      filter: invert(21%) sepia(55%) saturate(4271%) hue-rotate(250deg) brightness(82%) contrast(92%);
+    }
+  }
+
+  h1 {
+    font-family: Monserat-black, sans-serif;
+    font-size: 8rem;
+    color: $themeTextSecondaryColor;
+  }
+
+  .roadmap {
+    border-left: 1px solid $themeRoadmapBorderColor;
+    min-height: $sectionMinHeight !important;
+
+    pre {
+      background: black !important;
+      font-size: 1.2rem;
+      overflow-wrap: break-word;
+    }
+
+    .fas-roadmap {
+      color: $themeRoadmapBorderColor;
+      position: relative;
+      left: -56px;
+      top: -16px;
+      background-color: #000000 !important;
+      z-index: 3;
+    }
+  }
+}
+
+//endregion
+
+//region Work section
+.work-bg {
+  //background-size: 65%;
+
+  img {
+    position: relative;
+    width: 100% !important;
+    height: $sectionMinHeight !important;
+    object-fit: cover;
+    transform: translateY(-100%);
+  }
+
+  .container {
+    position: relative;
+    height: 100% !important;
+    z-index: 2 !important;
+  }
+}
+
+//endregion
 //endregion
 
 //region Common
@@ -30,5 +130,6 @@ $headerHeight: 260px !important;
   width: 64px !important;
   height: 64px !important;
 }
+
 
 //endregion
