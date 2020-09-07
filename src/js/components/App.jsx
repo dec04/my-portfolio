@@ -1,19 +1,21 @@
-import React from "react"
+import _ from "lodash"
 import SyntaxHighlighter from "react-syntax-highlighter"
 import {paraisoDark} from "react-syntax-highlighter/dist/esm/styles/hljs"
+import React from "react"
+import TypeIt from "typeit/dist/typeit.min"
+import * as GeoPattern from "geopattern"
 import Logo from "@img/Logo/WithoutName/logo_transparent_crop.png"
 import CircleImage from "@/js/components/CircleImage.jsx"
 import RoadmapSection from "@/js/components/RoadmapSection.jsx"
-import TypeIt from "typeit/dist/typeit.min"
-import * as GeoPattern from "geopattern"
-import _ from "lodash"
+import "vaguejs/Vague"
 
 class App extends React.Component {
     constructor(props) {
         super(props)
 
         this.state = {
-            curBackground: GeoPattern.generate("dec04", {color: "#000"}).toDataUrl()
+            curBackground: GeoPattern.generate(_.random(1000).toString(), {color: "#000"}).toDataUrl(),
+            bgDOMElement: null
         }
 
         this.handleMouseOver = this.handleMouseOver.bind(this)
@@ -29,12 +31,39 @@ class App extends React.Component {
             .type("Sometimes I dei").delete(1).type("sgn").move(-2).type("i").move(2).type(" and develop some stuff.")
             .pause(700).break().type("Let me show You...")
             .go()
+
+        // set bg wrapper height
+        let workBgHeight = document.getElementById("work-bg").offsetHeight
+        let workParent = document.getElementById("work-parent")
+        workParent.style.height = `${workBgHeight}px`
+
+        // set blur
+        $(".work-bg").Vague({
+            intensity: 1,
+            forceSVGUrl: false,
+            animationOptions: {
+                duration: 300,
+                easing: "linear"
+            }
+        }).animate(1)
     }
 
     handleMouseOver() {
+        let va = $(".work-bg").Vague({
+            intensity: 10,
+            forceSVGUrl: false,
+            animationOptions: {
+                duration: 350,
+                easing: "linear"
+            }
+        })
+        va.blur()
+
         this.setState({
             curBackground: GeoPattern.generate(_.random(1000).toString(), {color: "#000"}).toDataUrl()
         })
+        va.animate(1)
+
     }
 
     Main() {
@@ -92,18 +121,16 @@ class App extends React.Component {
                         <p id="aboutSectionContent"></p>
                     </RoadmapSection>
                 </div>
-                <div className="container-fluid">
-                    <div className="work-bg"
+                <div onMouseEnter={this.handleMouseOver} id="work-parent" className="container-fluid">
+                    <div id="work-bg"
+                         className="work-bg"
                          style={{
                              backgroundImage: `${this.state.curBackground}`
-                         }}
-                         onMouseEnter={this.handleMouseOver}
-                    >
-                        <div className="container">
-                            <RoadmapSection>
-                                <h1>Work</h1>
-                            </RoadmapSection>
-                        </div>
+                         }}></div>
+                    <div id="work-fg" className="container">
+                        <RoadmapSection>
+                            <h1>Work</h1>
+                        </RoadmapSection>
                     </div>
                 </div>
                 <div className="container">

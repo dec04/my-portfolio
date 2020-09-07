@@ -106,19 +106,46 @@ $sectionMinHeight: 600px;
 //region Work section
 .work-bg {
   //background-size: 65%;
+  position: absolute;
+  min-height: $sectionMinHeight;
+  width: 100% !important;
+  z-index: 1;
+}
 
-  img {
-    position: relative;
-    width: 100% !important;
-    height: $sectionMinHeight !important;
-    object-fit: cover;
-    transform: translateY(-100%);
-  }
+#work-fg {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  left: 0;
+}
 
-  .container {
-    position: relative;
-    height: 100% !important;
-    z-index: 2 !important;
+.parallax-container {
+  display: inline-block;
+  perspective: 1000px;
+
+  .parallax-back {
+    width: 200px;
+    height: 300px;
+    background: #000;
+    transform-style: preserve-3d;
+
+    .parallax-middle {
+      width: 50px;
+      height: 140px;
+      background: #f15;
+      position: absolute;
+      display: inline-block;
+      margin-top: 50px;
+      left: 40px;
+    }
+
+    .parallax-top {
+      width: 100px;
+      height: 50px;
+      background: #518;
+      position: absolute;
+      display: inline-block;
+    }
   }
 }
 

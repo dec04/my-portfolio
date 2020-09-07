@@ -52,7 +52,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-syntax-highlighter": "^13.5.3",
-    "typeit": "^7.0.4"
+    "typeit": "^7.0.4",
+    "vaguejs": "0.0.6"
   },
   "browserslist": "> 0.25%, not dead"
 }
