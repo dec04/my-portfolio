@@ -2,3 +2,8 @@
     font-family: "Insolata-Medium";
     src: url("../assets/fonts/Inconsolata-Medium.ttf");
 }
+
+@font-face {
+    font-family: "Insolata-Light";
+    src: url("../assets/fonts/Inconsolata-Light.ttf");
+}

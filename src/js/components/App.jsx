@@ -1,4 +1,5 @@
 import _ from "lodash"
+import "vaguejs/Vague"
 import SyntaxHighlighter from "react-syntax-highlighter"
 import {paraisoDark} from "react-syntax-highlighter/dist/esm/styles/hljs"
 import React from "react"
@@ -7,15 +8,14 @@ import * as GeoPattern from "geopattern"
 import Logo from "@img/Logo/WithoutName/logo_transparent_crop.png"
 import CircleImage from "@/js/components/CircleImage.jsx"
 import RoadmapSection from "@/js/components/RoadmapSection.jsx"
-import "vaguejs/Vague"
 
 class App extends React.Component {
     constructor(props) {
         super(props)
 
         this.state = {
-            curBackground: GeoPattern.generate(_.random(1000).toString(), {color: "#000"}).toDataUrl(),
-            bgDOMElement: null
+            curBackground: GeoPattern.generate(_.random(10000).toString(), {color: "#000"}).toDataUrl(),
+            bgDOMElement: null,
         }
 
         this.handleMouseOver = this.handleMouseOver.bind(this)
@@ -26,16 +26,18 @@ class App extends React.Component {
         new TypeIt("#aboutSectionContent")
             .delete(1)
             .pause(1500)
-            .type("Hi").pause(2000).type(", my name is Via").pause(250).delete(1).type("atl").pause(250).delete(3).type("taly.")
+            .type("Hi").pause(2000).type(", my name is Via").pause(250).delete(1).type("atl").pause(250).delete(3).type("taliy.")
             .break().pause(300)
             .type("Sometimes I dei").delete(1).type("sgn").move(-2).type("i").move(2).type(" and develop some stuff.")
             .pause(700).break().type("Let me show You...")
             .go()
 
         // set bg wrapper height
-        let workBgHeight = document.getElementById("work-bg").offsetHeight
+        let workFgHeight = document.getElementById("work-fg").offsetHeight
         let workParent = document.getElementById("work-parent")
-        workParent.style.height = `${workBgHeight}px`
+        let workBg = document.getElementById("work-bg")
+        workParent.style.height = `${workFgHeight}px`
+        workBg.style.height = `${workFgHeight}px`
 
         // set blur
         $(".work-bg").Vague({
@@ -60,7 +62,7 @@ class App extends React.Component {
         va.blur()
 
         this.setState({
-            curBackground: GeoPattern.generate(_.random(1000).toString(), {color: "#000"}).toDataUrl()
+            curBackground: GeoPattern.generate(_.random(10000).toString(), {color: "#000"}).toDataUrl()
         })
         va.animate(1)
 

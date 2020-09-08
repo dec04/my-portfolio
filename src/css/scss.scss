@@ -1,162 +1,309 @@
 @import "Montserrat.css";
 @import "Insolata.css";
 
+//region Variable
+//region App
 $border: 1px solid #ccc;
 $headerHeight: 300px !important;
 $themeTextCommonColor: #959595;
 $themeTextPrimaryColor: #5934c5;
 $themeTextSecondaryColor: #f4e11e;
+$themeWorkCardBackgroundColor: #090506;
 $themeRoadmapBorderColor: #5934c5;
 $sectionMinHeight: 600px;
+//endregion
+
+//region AppV2
+$themeBgRootColor: #000;
+$themeTextMainColor: #fff;
+$workBgHeight: 900px;
+$footerHeight: 900px;
+//endregion
+//endregion
 
 //region App
-.main {
-  position: absolute;
-  z-index: -1;
-  width: 100% !important;
-  height: 100% !important;
-  overflow-x: hidden;
-  background-color: #000;
-
-  font-family: Monserat-regular, sans-serif;
-
-  .container-fluid {
-    padding: 0 !important;
-  }
-}
-
-.header {
-  height: $headerHeight;
-}
-
-.circle-img {
-  border: #cccccc;
-  border-radius: 50px;
-  height: 100%;
-}
-
-//region About section
-#roadmap-section {
-  color: $themeTextCommonColor;
-  min-height: $sectionMinHeight !important;
-  //margin-bottom: 12px;
-
-  p {
-    font-family: Insolata-Medium, sans-serif;
-    font-size: 2.4rem;
-    color: #ddd;
-  }
-
-  .svg-scroll-wrapper {
-    position: relative;
-    background-color: black;
-    left: -60px;
-    top: $sectionMinHeight / 2;
-    width: 50px;
-
-    span {
-      position: absolute;
-      left: -52px;
-      transform: rotate(-90deg) !important;
-      color: $themeTextPrimaryColor;
-      background-color: transparent;
-      -webkit-box-shadow: 24px 0 40px -5px #5834c5;
-      -moz-box-shadow: 0 24px 40px -5px #5834c5;
-      box-shadow: 0 24px 40px -5px #5834c5;
-    }
-
-    img.scroll {
-      position: relative;
-      top: -1px;
-      width: 24px;
-      height: auto;
-      filter: invert(21%) sepia(55%) saturate(4271%) hue-rotate(250deg) brightness(82%) contrast(92%);
-    }
-  }
-
-  h1 {
-    font-family: Monserat-black, sans-serif;
-    font-size: 8rem;
-    color: $themeTextSecondaryColor;
-  }
-
-  .roadmap {
-    border-left: 1px solid $themeRoadmapBorderColor;
-    min-height: $sectionMinHeight !important;
-
-    pre {
-      background: black !important;
-      font-size: 1.2rem;
-      overflow-wrap: break-word;
-    }
-
-    .fas-roadmap {
-      color: $themeRoadmapBorderColor;
-      position: relative;
-      left: -56px;
-      top: -16px;
-      background-color: #000000 !important;
-      z-index: 3;
-    }
-  }
-}
+//.main {
+//  position: absolute;
+//  z-index: -1;
+//  width: 100% !important;
+//  height: 100% !important;
+//  overflow-x: hidden;
+//  background-color: #000;
+//
+//  font-family: Monserat-regular, sans-serif;
+//
+//  .container-fluid {
+//    padding: 0 !important;
+//  }
+//}
+//
+//.header {
+//  height: $headerHeight;
+//}
+//
+//.circle-img {
+//  border: #cccccc;
+//  border-radius: 50px;
+//  height: 100%;
+//}
+//
+////region About section
+//#roadmap-section {
+//  color: $themeTextCommonColor;
+//  min-height: $sectionMinHeight !important;
+//  //margin-bottom: 12px;
+//
+//  p {
+//    font-family: Insolata-Medium, sans-serif;
+//    font-size: 2.4rem;
+//    color: #ddd;
+//  }
+//
+//  .svg-scroll-wrapper {
+//    position: relative;
+//    background-color: black;
+//    left: -60px;
+//    top: $sectionMinHeight / 2;
+//    width: 50px;
+//
+//    span {
+//      position: absolute;
+//      left: -52px;
+//      transform: rotate(-90deg) !important;
+//      color: $themeTextPrimaryColor;
+//      background-color: transparent;
+//      -webkit-box-shadow: 24px 0 40px -5px #5834c5;
+//      -moz-box-shadow: 0 24px 40px -5px #5834c5;
+//      box-shadow: 0 24px 40px -5px #5834c5;
+//    }
+//
+//    img.scroll {
+//      position: relative;
+//      top: -1px;
+//      width: 24px;
+//      height: auto;
+//      filter: invert(21%) sepia(55%) saturate(4271%) hue-rotate(250deg) brightness(82%) contrast(92%);
+//    }
+//  }
+//
+//  h1 {
+//    font-family: Monserat-black, sans-serif;
+//    font-size: 8rem;
+//    color: $themeTextSecondaryColor;
+//  }
+//
+//  .roadmap {
+//    border-left: 1px solid $themeRoadmapBorderColor;
+//    min-height: $sectionMinHeight !important;
+//
+//    pre {
+//      background: black !important;
+//      font-size: 1.2rem;
+//      overflow-wrap: break-word;
+//    }
+//
+//    .fas-roadmap {
+//      color: $themeRoadmapBorderColor;
+//      position: relative;
+//      left: -56px;
+//      top: -16px;
+//      background-color: #000000 !important;
+//      z-index: 3;
+//    }
+//  }
+//}
 
 //endregion
 
 //region Work section
-.work-bg {
-  //background-size: 65%;
-  position: absolute;
-  min-height: $sectionMinHeight;
-  width: 100% !important;
-  z-index: 1;
-}
+//.work-bg {
+//  //background-size: 65%;
+//  position: absolute;
+//  min-height: $sectionMinHeight;
+//  width: 100% !important;
+//  z-index: 1;
+//}
 
 #work-fg {
   position: absolute;
   z-index: 3;
   right: 0;
   left: 0;
+
+  .bg-text {
+    position: absolute;
+    top: 10%;
+    right: -20%;
+
+    h5 {
+      font-size: 14rem;
+      font-family: Monserat-black, sans-serif;
+    }
+  }
 }
 
 .parallax-container {
   display: inline-block;
-  perspective: 1000px;
+  perspective: 400px;
 
   .parallax-back {
     width: 200px;
     height: 300px;
     background: #000;
     transform-style: preserve-3d;
+    font-family: Insolata-Medium, sans-serif;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.9);
+
+    .parallax-bottom {
+      width: 100% !important;
+      height: 100% !important;
+      background-size: 400%;
+    }
 
     .parallax-middle {
-      width: 50px;
-      height: 140px;
-      background: #f15;
+      width: auto;
+      height: auto;
+      max-width: 180px;
+      background: rgba(255, 255, 255, .5);
       position: absolute;
       display: inline-block;
-      margin-top: 50px;
-      left: 40px;
+      left: -40px;
+      bottom: 40px;
+
+      h5 {
+        font-weight: bold !important;
+        font-size: 1rem !important;
+        color: #000 !important;
+      }
+
+      p {
+        color: #000 !important;
+        font-size: 1rem !important;
+      }
     }
 
     .parallax-top {
-      width: 100px;
-      height: 50px;
-      background: #518;
+      width: auto;
+      height: auto;
+      min-width: 100px;
+      top: 30px;
+      right: -30px;
+      background: $themeTextPrimaryColor;
+      color: #dddddd !important;
+      font-family: Insolata-Medium, sans-serif;
+      font-weight: bolder;
       position: absolute;
       display: inline-block;
     }
   }
 }
 
+.work-card {
+  background: $themeWorkCardBackgroundColor;
+}
+
 //endregion
 //endregion
 
 //region Common
+body {
+  overflow: hidden;
+}
+
 .size-64 {
   width: 64px !important;
   height: 64px !important;
 }
 
+.margit-t-140 {
+  margin-top: 140px !important;
+}
+
+//endregion
+
+//region AppV2
+#main-container {
+  width: 100%;
+  height: 100%;
+  background-color: $themeBgRootColor;
+  font-family: Monserat-black, sans-serif;
+  color: $themeTextMainColor;
+
+  .main-bg {
+    position: absolute;
+    min-width: 100% !important;
+    min-height: 100% !important;
+  }
+
+  .main-fg {
+    min-width: 100% !important;
+    min-height: 100% !important;
+  }
+
+  .work-bg {
+    min-width: 100% !important;
+    min-height: $workBgHeight !important;
+  }
+
+  //region Sidebar
+  .simplebar-track.simplebar-vertical {
+    right: 6px;
+    width: 6px;
+    top: 100px;
+    bottom: 100px;
+  }
+
+  .simplebar-visible:before, {
+    background-color: $themeTextPrimaryColor;
+  }
+
+  .simplebar-scrollbar:before {
+    background-color: $themeTextPrimaryColor;
+    right: 6px;
+    width: 6px;
+    top: 100px;
+    bottom: 100px;
+  }
+
+  //endregion
+
+  a {
+    color: $themeTextPrimaryColor !important;
+    text-decoration: none;
+  }
+
+  #app {
+    width: 100%;
+    height: 100%;
+    background-color: $themeBgRootColor;
+
+    #logo {
+      img {
+        width: 150px;
+      }
+    }
+
+    #work-main {
+      p#work-main-type-it {
+        font-family: Insolata-Light, sans-serif;
+        font-size: 2rem;
+        height: 500px;
+      }
+
+      .buttons {
+        button {
+          outline: transparent 0;
+          border: 0;
+          background-color: transparent;
+          color: $themeTextSecondaryColor !important;
+        }
+      }
+    }
+
+    #footer {
+      min-height: $footerHeight;
+    }
+  }
+}
 
 //endregion
