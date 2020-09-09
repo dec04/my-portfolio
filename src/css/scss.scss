@@ -16,7 +16,8 @@ $sectionMinHeight: 600px;
 //region AppV2
 $themeBgRootColor: #000;
 $themeTextMainColor: #fff;
-$workBgHeight: 900px;
+$workBgHeight: 950px;
+$labHeight: 700px;
 $footerHeight: 900px;
 //endregion
 //endregion
@@ -207,7 +208,8 @@ $footerHeight: 900px;
 
 //region Common
 body {
-  overflow: hidden;
+  //overflow: hidden;
+  background-color: black !important;
 }
 
 .size-64 {
@@ -298,6 +300,35 @@ body {
           color: $themeTextSecondaryColor !important;
         }
       }
+    }
+
+    #lab {
+      position: relative;
+      min-height: $labHeight;
+      //background-color: #fff;
+      color: #ffffff;
+      padding: 0 !important;
+      overflow: hidden;
+    }
+
+    #lab-bg {
+      height: $labHeight;
+    }
+
+    #lab-fg {
+      position: absolute;
+      top: 0;
+      z-index: 4;
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    #footer-wrapper {
+      background: rgb(255, 255, 255);
+      background: -moz-linear-gradient(234deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 40%);
+      background: -webkit-linear-gradient(234deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 40%);
+      background: linear-gradient(234deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 40%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#000000", GradientType=1);
     }
 
     #footer {

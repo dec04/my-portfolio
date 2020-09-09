@@ -42,6 +42,8 @@
   "dependencies": {
     "@babel/polyfill": "^7.10.1",
     "@fortawesome/fontawesome-free": "^5.14.0",
+    "axios": "^0.20.0",
+    "backpax": "^1.0.3",
     "bootstrap": "^4.5.2",
     "express": "^4.17.1",
     "geopattern": "^1.2.3",
