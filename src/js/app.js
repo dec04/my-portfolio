@@ -25,9 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
         viewFactor: .05,
         afterReveal: () => {
             if (afterLoadingFlag) {
-                ScrollReveal().clean("#logo");
-                ScrollReveal().clean("#all-works");
-                ScrollReveal().clean(".buttons");
+                ScrollReveal().clean("#logo")
+                ScrollReveal().clean("#all-works")
+                ScrollReveal().clean(".buttons")
                 ScrollReveal().reveal("#logo", {reset: true, interval: 200})
                 ScrollReveal().reveal("#all-works", {reset: true, interval: 200})
                 ScrollReveal().reveal(".buttons", {reset: true, interval: 200})

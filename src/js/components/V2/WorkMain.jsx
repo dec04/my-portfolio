@@ -8,6 +8,7 @@ import MobileImg1 from "@img/patterns/mobile.jpg"
 import MobileImg2 from "@img/patterns/mobile2.jpg"
 import MobileImg3 from "@img/patterns/mobile3.jpg"
 import MobileImg4 from "@img/patterns/mobile4.jpg"
+import ScrollReveal from "scrollreveal";
 
 class WorkMain extends React.Component {
     constructor(props) {
@@ -104,6 +105,8 @@ class WorkMain extends React.Component {
         appName.go()
         appDesc.go()
         this.props.bgHandle(this.state.strings[next].image[_.random(0, 3)])
+        ScrollReveal().clean("#work-project-logo")
+        ScrollReveal().reveal("#work-project-logo", {delay: 300, reset: true})
     }
 
     render() {
@@ -111,12 +114,20 @@ class WorkMain extends React.Component {
             <div id="work-main" className="container">
                 <div className="row">
                     <div className="col-8 offset-2">
-                        <p id="work-main-type-it-app-name" className="text-center"></p>
+                        <p id="work-main-type-it-app-name" className="text-center"> </p>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col">
-                        <p id="work-main-type-it-app-description"></p>
+                        <p id="work-main-type-it-app-description"> </p>
+                    </div>
+                    <div className="col">
+                        <div id="work-project">
+                            <div id="work-project-logo"
+                                 style={{backgroundImage: `url(${GasImg4})`}}>
+                                <a href="#" className="px-3 py-1">enter <i className="ml-2 fas fa-level-down-alt"> </i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="row">

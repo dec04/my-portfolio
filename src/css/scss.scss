@@ -307,6 +307,7 @@ body {
     }
 
     #work-main {
+      position: relative;
 
       p#work-main-type-it-app-name {
         font-family: Insolata-Light, sans-serif;
@@ -318,6 +319,24 @@ body {
         font-family: Insolata-Light, sans-serif;
         font-size: 1rem;
         height: 250px;
+      }
+
+      #work-project {
+        visibility: hidden;
+
+        #work-project-logo {
+          position: relative;
+          width: 200px;
+          height: 200px;
+
+          a {
+            position: absolute;
+            top: 50px;
+            right: -25px;
+            color: #000 !important;
+            background-color: $themeTextSecondaryColor;
+          }
+        }
       }
 
       .buttons {
