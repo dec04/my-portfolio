@@ -66,10 +66,13 @@ class WorkMain extends React.Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col d-flex justify-content-end align-items-end">
+                    <div className="col d-flex justify-content-end align-items-end pb-5">
                         <div className="buttons">
-                            <button onClick={this.handleClick} className="mx-5">prev</button>
-                            <button onClick={this.handleClick} className="mx-5">next</button>
+                            <button onClick={this.handleClick} className="mx-3"><i
+                                className="fas fa-long-arrow-alt-left"> </i> prev
+                            </button>
+                            <button onClick={this.handleClick} className="mx-3">next <i
+                                className="fas fa-long-arrow-alt-right"> </i></button>
                         </div>
                     </div>
                 </div>

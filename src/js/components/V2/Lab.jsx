@@ -28,13 +28,13 @@ class Lab extends React.Component {
                     easing: "linear"
                 }
             })
-            .animate(6)
+            .animate(9)
     }
 
     onHoverExitHandler() {
         $("#lab-bg")
             .Vague({
-                intensity: 6,
+                intensity: 9,
                 forceSVGUrl: false,
                 animationOptions: {
                     duration: 300,

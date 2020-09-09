@@ -285,6 +285,23 @@ body {
       }
     }
 
+    #all-works {
+      transition: all .3s ease;
+      outline: transparent 0;
+      background-color: transparent;
+      color: $themeTextPrimaryColor !important;
+      text-decoration: none;
+      border: 1px solid #000;
+      border-radius: 62px;
+      padding: 20px;
+      height: 124px;
+      width: 124px;
+
+      &:hover {
+        border: 1px solid rgba(89, 52, 197, .8);
+      }
+    }
+
     #work-main {
       p#work-main-type-it {
         font-family: Insolata-Light, sans-serif;
@@ -294,10 +311,23 @@ body {
 
       .buttons {
         button {
+          transition: all .3s ease;
           outline: transparent 0;
-          border: 0;
           background-color: transparent;
           color: $themeTextSecondaryColor !important;
+          border: 1px solid #000;
+          border-radius: 60px;
+          padding: 20px;
+          height: 120px;
+          width: 120px;
+
+          i {
+            font-size: .8rem;
+          }
+
+          &:hover {
+            border: 1px solid rgba(244, 225, 30, .6);
+          }
         }
       }
     }
@@ -305,10 +335,13 @@ body {
     #lab {
       position: relative;
       min-height: $labHeight;
-      //background-color: #fff;
       color: #ffffff;
       padding: 0 !important;
       overflow: hidden;
+
+      -webkit-box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
     }
 
     #lab-bg {

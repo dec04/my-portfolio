@@ -13,7 +13,7 @@ class Header extends React.Component {
                     <div id="header"
                          className="col-10 offset-1 d-flex justify-content-between align-items-center align-content-center margit-t-140">
                         <Logo/>
-                        <a id="all-works" href="#">all works</a>
+                        <button id="all-works">all works</button>
                     </div>
                 </div>
             </div>
