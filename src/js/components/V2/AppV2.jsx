@@ -14,10 +14,14 @@ class AppV2 extends React.Component {
     constructor(props) {
         super(props)
 
+        this.mainBgElement = React.createRef()
         this.state = {
             mainBg: "",
-            workBg: ""
+            workBg: "",
+            timeOut: ""
         }
+
+        this.changeBgHandle = this.changeBgHandle.bind(this)
     }
 
     componentDidMount() {
@@ -26,10 +30,23 @@ class AppV2 extends React.Component {
         fg.style.height = `${bgHeight}px`
     }
 
+    changeBgHandle(img) {
+        clearTimeout(this.state.timeOut)
+        this.mainBgElement.current.changeBgColor("rgba(0,0,0,1)")
+        this.setState({
+            timeOut: setTimeout(() => this.setState({
+                workBg: img,
+                // mainBg: GeoPattern.generate(_.random(10000).toString(), {color: "#000"}).toDataUrl()
+            }, () => this.mainBgElement.current.changeBgColor("rgba(0,0,0,.9)")), 300)
+        })
+    }
+
     render() {
         return (
             <div id="app">
-                <MainBg img=""/>
+                <MainBg
+                    ref={this.mainBgElement}
+                    img={this.state.mainBg}/>
                 <div id="main-fg"
                      className="main-fg">
                     {/*<SimpleBar*/}
@@ -38,7 +55,7 @@ class AppV2 extends React.Component {
                     {/*</SimpleBar>*/}
                     <WorkBg img={this.state.workBg}>
                         <Header/>
-                        <WorkMain/>
+                        <WorkMain bgHandle={this.changeBgHandle}/>
                     </WorkBg>
                     <Lab/>
                     <Footer img={GeoPattern.generate(_.random(10000).toString(), {color: "#000"}).toDataUrl()}/>

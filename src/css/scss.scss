@@ -233,6 +233,7 @@ body {
 
   .main-bg {
     position: absolute;
+    transition: background-color .3s ease;
     min-width: 100% !important;
     min-height: 100% !important;
   }
@@ -245,6 +246,9 @@ body {
   .work-bg {
     min-width: 100% !important;
     min-height: $workBgHeight !important;
+    object-fit: cover;
+    background-size: 100%;
+    object-position: top;
   }
 
   //region Sidebar
@@ -291,7 +295,7 @@ body {
       background-color: transparent;
       color: $themeTextPrimaryColor !important;
       text-decoration: none;
-      border: 1px solid #000;
+      border: 1px solid transparent;
       border-radius: 62px;
       padding: 20px;
       height: 124px;
@@ -303,10 +307,17 @@ body {
     }
 
     #work-main {
-      p#work-main-type-it {
+
+      p#work-main-type-it-app-name {
         font-family: Insolata-Light, sans-serif;
         font-size: 2rem;
-        height: 500px;
+        height: 200px;
+      }
+
+      p#work-main-type-it-app-description {
+        font-family: Insolata-Light, sans-serif;
+        font-size: 1rem;
+        height: 250px;
       }
 
       .buttons {
@@ -315,7 +326,7 @@ body {
           outline: transparent 0;
           background-color: transparent;
           color: $themeTextSecondaryColor !important;
-          border: 1px solid #000;
+          border: 1px solid transparent;
           border-radius: 60px;
           padding: 20px;
           height: 120px;
@@ -369,5 +380,4 @@ body {
     }
   }
 }
-
 //endregion

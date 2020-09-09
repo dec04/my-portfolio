@@ -3,26 +3,20 @@ import React from "react"
 class WorkBg extends React.Component {
     constructor(props) {
         super(props)
-
         this.state = {
-            img: ""
+            bgColor: "rgba(0,0,0,0)"
         }
-
-        this.componentDidMount = this.componentDidMount.bind(this)
-    }
-
-    componentDidMount() {
-        this.setState({
-            img: this.props.img
-        })
     }
 
     render() {
         return (
             <div id="work-bg"
-                 style={{backgroundImage: `${this.state.img}`}}
+                 style={{backgroundImage: `url(${this.props.img})`}}
                  className="work-bg">
-                {this.props.children}
+                <div id="work-bg-overlay"
+                     style={{backgroundColor: this.state.bgColor}}>
+                    {this.props.children}
+                </div>
             </div>
 
         )

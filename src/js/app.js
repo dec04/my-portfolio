@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ScrollReveal().reveal("#logo", {delay: startDelay})
     ScrollReveal().reveal("#all-works", {delay: startDelay})
     ScrollReveal().reveal(".buttons", {delay: startDelay})
-    ScrollReveal().reveal("#work-main-type-it", {delay: 1000})
+    ScrollReveal().reveal("#work-main-type-it-app-name", {delay: 1000})
     ScrollReveal().reveal("#lab", {
         reset: true,
         viewFactor: .05,
