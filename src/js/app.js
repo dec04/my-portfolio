@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ScrollReveal().reveal("#footer", {
         distance: '50px',
         reset: true,
-        afterReveal: () => console.log("log")
+        afterReveal: () => {
+        }
     })
 })

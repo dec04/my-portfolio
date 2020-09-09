@@ -22,6 +22,8 @@ class AppV2 extends React.Component {
         }
 
         this.changeBgHandle = this.changeBgHandle.bind(this)
+        this.mouseListenerEnter = this.mouseListenerEnter.bind(this)
+        this.mouseListenerExit = this.mouseListenerExit.bind(this)
     }
 
     componentDidMount() {
@@ -41,6 +43,14 @@ class AppV2 extends React.Component {
         })
     }
 
+    mouseListenerEnter() {
+        this.mainBgElement.current.changeBgColor("rgba(0,0,0,1)")
+    }
+
+    mouseListenerExit() {
+        this.mainBgElement.current.changeBgColor("rgba(0,0,0,.9)")
+    }
+
     render() {
         return (
             <div id="app">
@@ -57,8 +67,12 @@ class AppV2 extends React.Component {
                         <Header/>
                         <WorkMain bgHandle={this.changeBgHandle}/>
                     </WorkBg>
-                    <Lab/>
-                    <Footer img={GeoPattern.generate(_.random(10000).toString(), {color: "#000"}).toDataUrl()}/>
+                    <div id="mouse-listener-helper"
+                         onMouseEnter={this.mouseListenerEnter}
+                         onMouseLeave={this.mouseListenerExit}>
+                        <Lab/>
+                        <Footer img={GeoPattern.generate(_.random(10000).toString(), {color: "#000"}).toDataUrl()}/>
+                    </div>
                 </div>
             </div>
         )
