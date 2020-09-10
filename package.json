@@ -50,6 +50,7 @@
     "jquery": "^3.5.1",
     "lodash": "^4.17.15",
     "normalize.css": "^8.0.1",
+    "parallax-js": "^3.1.0",
     "popper.js": "^1.16.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -57,7 +58,18 @@
     "scrollreveal": "^4.0.7",
     "simplebar-react": "^3.0.0-beta.5",
     "typeit": "^7.0.4",
-    "vaguejs": "0.0.6"
+    "vaguejs": "0.0.6",
+    "vivus": "^0.4.5"
   },
-  "browserslist": "> 0.25%, not dead"
+  "browserslist": [
+    "> .01%",
+    "not dead",
+    "last 3 Chrome versions",
+    "last 3 Firefox versions",
+    "last 3 Safari versions",
+    "last 2 Edge versions",
+    "last 1 version",
+    "Firefox ESR",
+    "not ie <= 11"
+  ]
 }

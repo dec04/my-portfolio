@@ -39,7 +39,7 @@ class AppV2 extends React.Component {
             timeOut: setTimeout(() => this.setState({
                 workBg: img,
                 // mainBg: GeoPattern.generate(_.random(10000).toString(), {color: "#000"}).toDataUrl()
-            }, () => this.mainBgElement.current.changeBgColor("rgba(0,0,0,.9)")), 300)
+            }, () => this.mainBgElement.current.changeBgColor("rgba(0,0,0,.8)")), 300)
         })
     }
 
@@ -48,7 +48,7 @@ class AppV2 extends React.Component {
     }
 
     mouseListenerExit() {
-        this.mainBgElement.current.changeBgColor("rgba(0,0,0,.9)")
+        this.mainBgElement.current.changeBgColor("rgba(0,0,0,.8)")
     }
 
     render() {
