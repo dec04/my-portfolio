@@ -28,13 +28,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 ScrollReveal().clean("#logo")
                 ScrollReveal().clean("#all-works")
                 ScrollReveal().clean(".buttons")
-                ScrollReveal().reveal("#logo", {reset: true, interval: 200})
+                ScrollReveal().reveal("#logo", {reset: true, distance: "-100px", origin: "right"})
                 ScrollReveal().reveal("#all-works", {reset: true, interval: 200})
                 ScrollReveal().reveal(".buttons", {reset: true, interval: 200})
                 afterLoadingFlag = false
             }
         }
     })
+    ScrollReveal().reveal(".lab-big-header", {reset: true, distance: "-100px", origin: "right"})
+    ScrollReveal().reveal(".lab-small-header", {delay: 200, reset: true, interval: 100, distance: "-70px"})
+    ScrollReveal().reveal(".lab-link-wrapper", {delay: 300, reset: true, interval: 100, distance: "-50px"})
     ScrollReveal().reveal("#footer", {
         distance: '50px',
         reset: true,

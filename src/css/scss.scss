@@ -17,7 +17,7 @@ $sectionMinHeight: 600px;
 $themeBgRootColor: #000;
 $themeTextMainColor: #fff;
 $workBgHeight: 950px;
-$labHeight: 700px;
+$labHeight: 800px;
 $footerHeight: 900px;
 //endregion
 //endregion
@@ -213,6 +213,12 @@ body {
   cursor: none !important;
 }
 
+.divider {
+  width: 100%;
+  border-bottom: 2px solid #fff;
+  margin: 25px 0;
+}
+
 button, a {
   cursor: none !important;
 }
@@ -235,12 +241,12 @@ button, a {
     transition: opacity .3s ease;
     font-size: 1.4rem;
     opacity: 0;
-    top: -10px;
+    top: 10px;
     left: -95px;
     width: 200px;
     height: 40px;
     color: #fff;
-    font-family: Insolata-Light, sans-serif;
+    font-family: Monserat-black, sans-serif;
   }
 
   &__ball {
@@ -456,6 +462,42 @@ button, a {
       z-index: 4;
       width: 100% !important;
       height: 100% !important;
+
+      h1 {
+        font-size: 6rem;
+        font-family: Monserat-black, sans-serif;
+        color: $themeTextSecondaryColor;
+      }
+
+      h2 {
+        color: $themeTextPrimaryColor;
+        font-size: 3rem;
+        font-family: Monserat-black, sans-serif;
+      }
+
+      .lab-link {
+        position: relative;
+        display: inline-block;
+        height: 100%;
+        width: 30px;
+        margin-left: 10px;
+
+        svg {
+          position: absolute;
+          top: -22px;
+          height: 30px;
+          width: 30px;
+        }
+      }
+
+      a {
+        font-size: 1.4rem !important;
+        color: #fff !important;
+        line-height: 2.8rem;
+        &:hover {
+          color: $themeTextSecondaryColor !important;
+        }
+      }
     }
 
     #footer-wrapper {
