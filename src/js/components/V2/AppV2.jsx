@@ -1,7 +1,6 @@
 import React from "react"
 import Header from "@/js/components/V2/Header.jsx"
 import Footer from "@/js/components/V2/Footer.jsx"
-import "simplebar-react/dist/simplebar.min.css"
 import MainBg from "@/js/components/V2/MainBg.jsx"
 import WorkBg from "@/js/components/V2/WorkBg.jsx"
 import WorkMain from "@/js/components/V2/WorkMain.jsx"
@@ -9,7 +8,6 @@ import * as GeoPattern from "geopattern"
 import _ from "lodash"
 import Lab from "@/js/components/V2/Lab.jsx"
 import Cursor from "@/js/components/V2/Cursor.jsx"
-
 
 class AppV2 extends React.Component {
     constructor(props) {

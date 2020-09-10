@@ -340,7 +340,7 @@ button, a {
       transition: border .3s ease;
       outline: transparent 0;
       background-color: transparent;
-      color: $themeTextPrimaryColor !important;
+      color: $themeTextSecondaryColor !important;
       text-decoration: none;
       border: 1px solid transparent;
       border-radius: 62px;
@@ -353,7 +353,8 @@ button, a {
       }
 
       &:hover {
-        border: 1px solid rgba(89, 52, 197, .8);
+        //border: 1px solid rgba(89, 52, 197, .8);
+        border: 1px solid rgba(244, 225, 30, .6);
       }
     }
 
@@ -396,15 +397,15 @@ button, a {
           position: absolute;
           top: 100px !important;
           left: 125px !important;
-          color: #000 !important;
-          background-color: $themeTextSecondaryColor;
+          color: $themeTextSecondaryColor !important;
+          background-color: #000;
 
           &:hover {
-            background-color: #000 !important;
-            color: $themeTextSecondaryColor !important;
+            background-color: #fff !important;
+            color: $themeTextPrimaryColor !important;
 
             i {
-              color: $themeTextSecondaryColor !important;
+              color: $themeTextPrimaryColor !important;
             }
           }
         }

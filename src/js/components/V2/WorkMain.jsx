@@ -30,24 +30,6 @@ class WorkMain extends React.Component {
             curEl: 0,
             strings: [
                 {
-                    name: ["altaygaz22", "sibgaz.ru/gaz"],
-                    description: [
-                        "Web application for order gas balloons at home",
-                        "Only for abonents akgs.ru and sibgaz.ru company"
-                    ],
-                    image: [
-                        WebApp1,
-                        WebApp2
-                    ],
-                    patterns: [
-                        GasImg1,
-                        GasImg2,
-                        GasImg3,
-                        GasImg4
-                    ],
-                    logo: WebSvg
-                },
-                {
                     name: "Order gas balloon app",
                     description: [
                         "Android application for order gas balloons at home",
@@ -66,6 +48,24 @@ class WorkMain extends React.Component {
                         MobileImg4
                     ],
                     logo: MobileSvg
+                },
+                {
+                    name: ["altaygaz22", "sibgaz.ru/gaz"],
+                    description: [
+                        "Web application for order gas balloons at home",
+                        "Only for abonents akgs.ru and sibgaz.ru company"
+                    ],
+                    image: [
+                        WebApp1,
+                        WebApp2
+                    ],
+                    patterns: [
+                        GasImg1,
+                        GasImg2,
+                        GasImg3,
+                        GasImg4
+                    ],
+                    logo: WebSvg
                 },
             ]
         }
@@ -145,6 +145,11 @@ class WorkMain extends React.Component {
                 myVivus.el.setAttribute('filter', 'invert(93%) sepia(61%) saturate(1502%) hue-rotate(340deg) brightness(103%) contrast(91%)');
             }
         })
+
+        $("#work-bg")
+            .stop()
+            .animate({ backgroundSize: "100%" }, 300)
+            .animate({ backgroundSize: "115%" }, 10000);
     }
 
     render() {
