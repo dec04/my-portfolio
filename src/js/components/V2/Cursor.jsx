@@ -9,6 +9,8 @@ class Cursor extends React.Component {
     componentDidMount() {
         //region CURSOR
         let cursor = document.querySelector(".cursor__ball--small"),
+            dot = document.querySelector("#dot"),
+            cursorText = document.querySelector(".cursor-text"),
             follower =  document.querySelector(".cursor__ball--big"),
             hoverable = document.querySelectorAll(".hoverable")
 
@@ -51,13 +53,20 @@ class Cursor extends React.Component {
         })
         hoverable.forEach(el => el.addEventListener("mouseenter", (e) => {
             TweenMax.to(follower, .3, {
-                scale: 4
+                scale: 5
             })
+            dot.style.opacity = 0
+            cursorText.style.opacity = 1
+            cursorText.innerHTML = !!e.target.getAttribute("data-hoverable") ?
+                e.target.getAttribute("data-hoverable") :
+                ""
         }))
         hoverable.forEach(el => el.addEventListener("mouseleave", (e) => {
             TweenMax.to(follower, .3, {
                 scale: 1
             })
+            dot.style.opacity = 1
+            cursorText.style.opacity = 0
         }))
         //endregion
     }
@@ -72,9 +81,10 @@ class Cursor extends React.Component {
                 </div>
 
                 <div className="cursor__ball cursor__ball--small">
-                    <svg height="10" width="10">
+                    <svg id="dot" height="10" width="10">
                         <circle cx="5" cy="5" r="4" strokeWidth="0"> </circle>
                     </svg>
+                    <span className="cursor-text d-flex justify-content-center align-content-center align-items-center text-center"> </span>
                 </div>
             </div>
         )

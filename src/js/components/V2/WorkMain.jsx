@@ -30,7 +30,7 @@ class WorkMain extends React.Component {
             curEl: 0,
             strings: [
                 {
-                    name: "altaygaz22",
+                    name: ["altaygaz22", "sibgaz.ru/gaz"],
                     description: [
                         "Web application for order gas balloons at home",
                         "Only for abonents akgs.ru and sibgaz.ru company"
@@ -182,7 +182,7 @@ class WorkMain extends React.Component {
                             <a id="work-project-button"
                                href="#"
                                data-depth=".4"
-                               className="px-3 py-1">enter <i className="ml-2 fas fa-level-down-alt"> </i></a>
+                               className="px-3 py-1 hoverable">enter <i className="ml-2 fas fa-level-down-alt"> </i></a>
                         </div>
                     </div>
                 </div>

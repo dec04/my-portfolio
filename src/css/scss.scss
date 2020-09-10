@@ -227,7 +227,21 @@ button, a {
 }
 
 .cursor {
+  position: relative;
   pointer-events: none;
+
+  span.cursor-text {
+    position: absolute;
+    transition: opacity .3s ease;
+    font-size: 1.4rem;
+    opacity: 0;
+    top: -10px;
+    left: -95px;
+    width: 200px;
+    height: 40px;
+    color: #fff;
+    font-family: Insolata-Light, sans-serif;
+  }
 
   &__ball {
     position: fixed;
@@ -236,9 +250,21 @@ button, a {
     mix-blend-mode: difference;
     z-index: 1000;
 
-    circle {
-      fill: #f7f8fa;
+    &--big {
+      circle {
+        //stroke: #ffffff;
+        fill: #ffffff;
+      }
     }
+
+    &--small {
+      circle {
+        fill: #ffffff;
+      }
+    }
+
+
+
   }
 }
 //endregion
