@@ -1,5 +1,9 @@
 import React from "react"
 import TypeIt from "typeit/dist/typeit.min"
+import ScrollReveal from "scrollreveal"
+import Vivus from "vivus/dist/vivus.min"
+import Parallax from "parallax-js"
+
 import GasImg1 from "@img/patterns/gas.jpg"
 import GasImg2 from "@img/patterns/gas2.jpg"
 import GasImg3 from "@img/patterns/gas3.jpg"
@@ -15,9 +19,6 @@ import MobileImg1 from "@img/patterns/mobile.jpg"
 import MobileImg2 from "@img/patterns/mobile2.jpg"
 import MobileImg3 from "@img/patterns/mobile3.jpg"
 import MobileImg4 from "@img/patterns/mobile4.jpg"
-import ScrollReveal from "scrollreveal"
-import Parallax from "parallax-js"
-import Vivus from "vivus/dist/vivus.min"
 
 class WorkMain extends React.Component {
     constructor(props) {
@@ -190,12 +191,12 @@ class WorkMain extends React.Component {
                         <div className="buttons">
                             <button onClick={() => {
                                 this.handleClick("dec")
-                            }} className="mx-3"><i
+                            }} className="mx-3 hoverable"><i
                                 className="fas fa-long-arrow-alt-left"> </i> prev
                             </button>
                             <button onClick={() => {
                                 this.handleClick("inc")
-                            }} className="mx-3">next <i
+                            }} className="mx-3 hoverable">next <i
                                 className="fas fa-long-arrow-alt-right"> </i></button>
                         </div>
                     </div>

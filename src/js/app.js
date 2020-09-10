@@ -7,11 +7,13 @@ import ReactDOM from "react-dom"
 import {createElement} from "react"
 import App from "@/js/components/V2/AppV2.jsx"
 import ScrollReveal from "scrollreveal"
+import {TweenMax} from "gsap/all"
+
 
 ReactDOM.render(createElement(App), document.getElementById("main-container"))
 
 document.addEventListener("DOMContentLoaded", () => {
-    const startDelay = 17000
+    const startDelay = 170
     let afterLoadingFlag = true
 
     debug.store("DOM Content Loaded")

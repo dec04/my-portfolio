@@ -8,6 +8,7 @@ import WorkMain from "@/js/components/V2/WorkMain.jsx"
 import * as GeoPattern from "geopattern"
 import _ from "lodash"
 import Lab from "@/js/components/V2/Lab.jsx"
+import Cursor from "@/js/components/V2/Cursor.jsx"
 
 
 class AppV2 extends React.Component {
@@ -54,6 +55,7 @@ class AppV2 extends React.Component {
     render() {
         return (
             <div id="app">
+                <Cursor />
                 <MainBg
                     ref={this.mainBgElement}
                     img={this.state.mainBg}/>
