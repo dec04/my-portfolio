@@ -510,6 +510,75 @@ button, a {
 
     #footer {
       min-height: $footerHeight;
+
+      h1#email {
+        transition: color .3s ease;
+        margin-top: 200px;
+        display: inline-block;
+        width: auto;
+        span {
+          transition: color .3s ease;
+          color: $themeTextSecondaryColor;
+        }
+
+        &:hover {
+          color: $themeTextSecondaryColor;
+
+          span {
+            color: $themeTextPrimaryColor;
+          }
+        }
+      }
+
+      h1 {
+        font-family: Insolata-Light, sans-serif;
+        font-size: 3.6rem;
+        color: #ccc;
+      }
+
+      #about {
+        pre {
+          background-color: #000 !important;
+          font-size: 1.1rem;
+        }
+      }
+
+      #about, #works {
+        margin-top: 100px;
+
+        h3 {
+          color: $themeTextPrimaryColor;
+          font-family: Monserat-black, sans-serif;
+          font-size: 2.2rem;
+        }
+
+        .works-link-wrapper {
+          a {
+            font-size: 1.2rem;
+            font-family: Monserat-black, sans-serif;
+            color: #fff !important;
+            line-height: 2.4rem;
+          }
+        }
+
+        .social-icon-wrapper {
+          display: inline-block;
+          transition: border-color .3s ease;
+          width: 80px;
+          height: 80px;
+          border: 1px solid #000;
+          border-radius: 50%;
+          padding: 25px;
+
+          &:hover {
+            border-color: #fff;
+          }
+
+          svg {
+            width: 30px;
+          }
+        }
+      }
     }
   }
 }

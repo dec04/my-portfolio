@@ -1,4 +1,3 @@
-import("lodash")
 import "@css/app.css"
 import "@css/less.less"
 import "@css/scss.scss"
@@ -7,6 +6,14 @@ import ReactDOM from "react-dom"
 import {createElement} from "react"
 import App from "@/js/components/V2/AppV2.jsx"
 import ScrollReveal from "scrollreveal"
+import Vivus from "vivus/dist/vivus.min"
+
+import GithubSvg from "@img/github.svg"
+import FacebookSvg from "@img/facebook.svg"
+import TwitterSvg from "@img/twitter.svg"
+import InstagramSvg from "@img/instagram.svg"
+
+import("lodash")
 
 ReactDOM.render(createElement(App), document.getElementById("main-container"))
 
@@ -36,6 +43,59 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     })
     ScrollReveal().reveal(".lab-big-header", {reset: true, distance: "-100px", origin: "right"})
+    ScrollReveal().reveal(".divider", {reset: true, distance: "-30px", interval: 100})
+    ScrollReveal().reveal("#github-social", {
+        reset: true, distance: "30px", interval: 100, afterReveal: (el) => {
+            new Vivus(el, {
+                file: GithubSvg,
+                type: 'delayed',
+                duration: 80,
+                onReady: function (myVivus) {
+                    myVivus.el.setAttribute('filter', 'invert(100%) sepia(83%) saturate(0%) hue-rotate(298deg) brightness(109%) contrast(101%)')
+                }
+            })
+        },
+        beforeReveal: (el) => $(el).html("")
+    })
+    ScrollReveal().reveal("#facebook-social", {
+        reset: true, distance: "30px", interval: 100, afterReveal: (el) => {
+            new Vivus(el, {
+                file: FacebookSvg,
+                type: 'delayed',
+                duration: 80,
+                onReady: function (myVivus) {
+                    myVivus.el.setAttribute('filter', 'invert(100%) sepia(83%) saturate(0%) hue-rotate(298deg) brightness(109%) contrast(101%)')
+                }
+            })
+        },
+        beforeReveal: (el) => $(el).html("")
+    })
+    ScrollReveal().reveal("#twitter-social", {
+        reset: true, distance: "30px", interval: 100, afterReveal: (el) => {
+            new Vivus(el, {
+                file: TwitterSvg,
+                type: 'delayed',
+                duration: 80,
+                onReady: function (myVivus) {
+                    myVivus.el.setAttribute('filter', 'invert(100%) sepia(83%) saturate(0%) hue-rotate(298deg) brightness(109%) contrast(101%)')
+                }
+            })
+        },
+        beforeReveal: (el) => $(el).html("")
+    })
+    ScrollReveal().reveal("#instagram-social", {
+        reset: true, distance: "30px", interval: 100, afterReveal: (el) => {
+            new Vivus(el, {
+                file: InstagramSvg,
+                type: 'delayed',
+                duration: 80,
+                onReady: function (myVivus) {
+                    myVivus.el.setAttribute('filter', 'invert(100%) sepia(83%) saturate(0%) hue-rotate(298deg) brightness(109%) contrast(101%)')
+                }
+            })
+        },
+        beforeReveal: (el) => $(el).html("")
+    })
     ScrollReveal().reveal(".lab-small-header", {delay: 200, reset: true, interval: 100, distance: "-70px"})
     ScrollReveal().reveal(".lab-link-wrapper", {delay: 300, reset: true, interval: 100, distance: "-50px"})
     ScrollReveal().reveal("#footer", {
@@ -44,4 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
         afterReveal: () => {
         }
     })
+    ScrollReveal().reveal(".footer-big-header", {reset: true, distance: "-100px", origin: "right"})
+    ScrollReveal().reveal(".footer-small-header", {delay: 200, reset: true, interval: 100, distance: "-70px"})
+    ScrollReveal().reveal("#highlight-code", {reset: true, distance: "-100px", origin: "right"})
 })
