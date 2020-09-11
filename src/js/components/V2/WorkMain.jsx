@@ -170,7 +170,8 @@ class WorkMain extends React.Component {
                     <div id="scene-app-desc"
                          data-pointer-events="true"
                          data-hover-only="true"
-                         data-relative-input="true"className="col">
+                         data-relative-input="true"
+                         className="col">
                         <p id="work-main-type-it-app-description"
                            data-depth=".06"> </p>
                     </div>

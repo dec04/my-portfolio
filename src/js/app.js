@@ -106,5 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     ScrollReveal().reveal(".footer-big-header", {reset: true, distance: "-100px", origin: "right"})
     ScrollReveal().reveal(".footer-small-header", {delay: 200, reset: true, interval: 100, distance: "-70px"})
-    ScrollReveal().reveal("#highlight-code", {reset: true, distance: "-100px", origin: "right"})
+    ScrollReveal().reveal(".language-javascript *", {reset: true, distance: "-100px", interval: 10, origin: "right"})
+    ScrollReveal().reveal("#copyright-info", {reset: true, distance: "-100px", origin: "right"})
+    ScrollReveal().reveal(".work-links", {reset: true, interval: 100, distance: "-70px"})
 })

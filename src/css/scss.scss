@@ -491,6 +491,7 @@ button, a {
       }
 
       a {
+        transition: color .3s ease;
         font-size: 1.4rem !important;
         color: #fff !important;
         line-height: 2.8rem;
@@ -510,6 +511,10 @@ button, a {
 
     #footer {
       min-height: $footerHeight;
+
+      .divider {
+        border-color: #353535;
+      }
 
       h1#email {
         transition: color .3s ease;
@@ -532,7 +537,7 @@ button, a {
 
       h1 {
         font-family: Insolata-Light, sans-serif;
-        font-size: 3.6rem;
+        font-size: 4rem;
         color: #ccc;
       }
 
@@ -554,19 +559,45 @@ button, a {
 
         .works-link-wrapper {
           a {
+            transition: color .3s ease;
             font-size: 1.2rem;
             font-family: Monserat-black, sans-serif;
             color: #fff !important;
             line-height: 2.4rem;
+            &:hover {
+              color: $themeTextSecondaryColor !important;
+            }
+          }
+        }
+      }
+
+      #copyright {
+        #copyright-info {
+          display: block;
+          height: auto;
+          object-position: center;
+          object-fit: cover;
+          margin: 15px 0;
+
+          img {
+            width: 50px;
+            height: 50px;
+          }
+
+          p {
+            margin-left: 70px;
+            margin-top: 11px;
+            display: inline-block;
+            color: #454545;
           }
         }
 
         .social-icon-wrapper {
+          transition: .3s border-color ease;
           display: inline-block;
-          transition: border-color .3s ease;
           width: 80px;
           height: 80px;
-          border: 1px solid #000;
+          border: 1px solid transparent;
           border-radius: 50%;
           padding: 25px;
 
