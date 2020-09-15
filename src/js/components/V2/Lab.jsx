@@ -67,19 +67,21 @@ class Lab extends React.Component {
     }
 
     linkHoverHandler(e) {
-        new Vivus(e.target.querySelector(".lab-link"), {
-            file: LinkSvg,
-            type: 'delayed',
-            duration: 80,
-            onReady: function (myVivus) {
-                myVivus.el.setAttribute('width', '30px')
-                myVivus.el.setAttribute('filter', 'invert(100%) sepia(83%) saturate(0%) hue-rotate(298deg) brightness(109%) contrast(101%)')
-            }
-        })
+        if (!!e.target.querySelector(".lab-link"))
+            new Vivus(e.target.querySelector(".lab-link"), {
+                file: LinkSvg,
+                type: 'delayed',
+                duration: 80,
+                onReady: function (myVivus) {
+                    myVivus.el.setAttribute('width', '30px')
+                    myVivus.el.setAttribute('filter', 'invert(100%) sepia(83%) saturate(0%) hue-rotate(298deg) brightness(109%) contrast(101%)')
+                }
+            })
     }
 
     linkLeaveHandler(e) {
-        e.target.querySelector(".lab-link").innerHTML = ""
+        if (!!e.target.querySelector(".lab-link"))
+            e.target.querySelector(".lab-link").innerHTML = ""
     }
 
     render() {
