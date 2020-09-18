@@ -18,7 +18,7 @@ import("lodash")
 ReactDOM.render(createElement(App), document.getElementById("main-container"))
 
 document.addEventListener("DOMContentLoaded", () => {
-    const startDelay = 17000
+    const startDelay = 170
     let afterLoadingFlag = true
 
     debug.store("DOM Content Loaded")

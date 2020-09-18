@@ -213,6 +213,10 @@ body {
   cursor: none !important;
 }
 
+.mt-30-percent {
+  margin-top: 30% !important;
+}
+
 .divider {
   width: 100%;
   border-bottom: 2px solid #fff;
@@ -268,9 +272,6 @@ button, a {
         fill: #ffffff;
       }
     }
-
-
-
   }
 }
 //endregion
@@ -353,6 +354,7 @@ button, a {
       padding: 20px;
       height: 124px;
       width: 124px;
+      font-size: 1.4rem;
 
       i {
         font-size: .8rem;
@@ -361,6 +363,81 @@ button, a {
       &:hover {
         //border: 1px solid rgba(89, 52, 197, .8);
         border: 1px solid rgba(244, 225, 30, .6);
+      }
+    }
+
+    #menu {
+      display: none;
+      position: absolute;
+      width: 100% !important;
+      height: 100% !important;
+      z-index: 999 !important;
+      background-color: #000 !important;
+      color: #fff !important;
+      animation: showUp 1s ease;
+    }
+
+    #menu-bg {
+      transition: all .3s ease;
+    }
+
+    @keyframes showUp {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    #menu-fg {
+      position: absolute;
+      background: rgb(255,255,255);
+      background: -moz-linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 45%);
+      background: -webkit-linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 45%);
+      background: linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 45%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#000000",GradientType=1);
+      width: 100% !important;
+      height: 100% !important;
+      color: #fff !important;
+
+      .menu-header-big {
+        transition: all .3s ease;
+        font-size: 4rem;
+        color: $themeTextSecondaryColor !important;
+
+        span {
+          transition: all .3s ease;
+          color: #fff !important;
+          svg {
+            transition: all .3s ease;
+            color: #fff !important;
+
+            &:hover {
+              transform: rotate(-180deg);
+              color: $themeTextPrimaryColor !important;
+            }
+          }
+        }
+      }
+
+      .menu-header-small {
+        transition: all .3s ease;
+        font-size: 2rem;
+        color: $themeTextPrimaryColor !important;
+      }
+
+      .menu-link-wrapper {
+        display: block;
+
+        a {
+          font-size: 1.4rem !important;
+          color: #fff !important;
+
+          &:hover {
+            color: $themeTextSecondaryColor !important;
+          }
+        }
       }
     }
 

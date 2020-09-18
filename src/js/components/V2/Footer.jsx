@@ -103,12 +103,42 @@ class Footer extends React.Component {
                                      data-hover-only="true"
                                      data-relative-input="true">
                                     <a data-depth=".06"
-                                       href="#"
+                                       href="https://altaygaz22.ru"
                                        className="hoverable"
                                        data-hoverable="link  &rarr;">
-                                        Site altaygaz22.ru & sibgaz.ru/gas/</a>
+                                        Site altaygaz22.ru</a>
                                 </div>
-                                <div className="work-links works-link-wrapper mb-5"
+                                <div className="work-links works-link-wrapper"
+                                     data-pointer-events="true"
+                                     data-hover-only="true"
+                                     data-relative-input="true">
+                                    <a data-depth=".06"
+                                       href="https://sibgaz.ru/gaz/"
+                                       className="hoverable"
+                                       data-hoverable="link  &rarr;">
+                                        Site sibgaz.ru/gas/</a>
+                                </div>
+                                <div className="work-links works-link-wrapper"
+                                     data-pointer-events="true"
+                                     data-hover-only="true"
+                                     data-relative-input="true">
+                                    <a data-depth=".06"
+                                       href="https://play.google.com/store/apps/details?id=com.decoy.gasbaloonapp.a"
+                                       className="hoverable"
+                                       data-hoverable="link  &rarr;">
+                                        Android app for altaygaz22.ru</a>
+                                </div>
+                                <div className="work-links works-link-wrapper"
+                                     data-pointer-events="true"
+                                     data-hover-only="true"
+                                     data-relative-input="true">
+                                    <a data-depth=".06"
+                                       href="https://play.google.com/store/apps/details?id=com.decoy.gasbaloonapp.n"
+                                       className="hoverable"
+                                       data-hoverable="link  &rarr;">
+                                        Android app for sibgaz.ru/gaz</a>
+                                </div>
+                                <div className="work-links works-link-wrapper"
                                      data-pointer-events="true"
                                      data-hover-only="true"
                                      data-relative-input="true">
@@ -116,7 +146,7 @@ class Footer extends React.Component {
                                        href="#"
                                        className="hoverable"
                                        data-hoverable="link  &rarr;">
-                                        Android gas balloon order app</a>
+                                        Reworking akgs.ru</a>
                                 </div>
                             </div>
                         </div>

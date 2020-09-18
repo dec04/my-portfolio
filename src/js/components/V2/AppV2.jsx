@@ -8,6 +8,7 @@ import * as GeoPattern from "geopattern"
 import _ from "lodash"
 import Lab from "@/js/components/V2/Lab.jsx"
 import Cursor from "@/js/components/V2/Cursor.jsx"
+import Menu from "@/js/components/V2/Menu.jsx"
 
 class AppV2 extends React.Component {
     constructor(props) {
@@ -53,6 +54,7 @@ class AppV2 extends React.Component {
     render() {
         return (
             <div id="app">
+                <Menu />
                 <Cursor />
                 <MainBg
                     ref={this.mainBgElement}
