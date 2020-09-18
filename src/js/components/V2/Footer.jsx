@@ -64,7 +64,7 @@ class Footer extends React.Component {
                 className="container-fluid">
                 <div id="footer-wrapper" className="row">
                     <div id="footer"
-                         className="col-10 offset-1 p-5">
+                         className="col-12 col-md-10 offset-md-1 p-5">
                         <div className="row">
                             <div id="email-scene"
                                  data-pointer-events="true"
@@ -81,7 +81,7 @@ class Footer extends React.Component {
                         </div>
                         <div className="row d-flex justify-content-between">
                             <div id="about"
-                                 className="col-7">
+                                 className="col-12 col-xl-7">
                                 <h3 className="footer-small-header">About</h3>
                                 <div className="divider"> </div>
                                 <div id="highlight-code">
@@ -95,7 +95,7 @@ class Footer extends React.Component {
                                 </div>
                             </div>
                             <div id="works"
-                                 className="col-4 text-right">
+                                 className="col-12 col-xl-4 text-right">
                                 <h3 className="footer-small-header">Works</h3>
                                 <div className="divider"> </div>
                                 <div className="work-links works-link-wrapper"
@@ -154,7 +154,7 @@ class Footer extends React.Component {
                             <div id="copyright" className="col">
                                 <div className="row d-flex justify-content-between">
                                     <div className="divider"> </div>
-                                    <div className="col">
+                                    <div className="col-12 order-2 order-lg-1 col-lg-6">
                                         <div id="copyright-info"
                                              data-pointer-events="true"
                                              data-hover-only="true"
@@ -164,7 +164,7 @@ class Footer extends React.Component {
                                             <p data-depth=".035" >2020. Developed dec04.</p>
                                         </div>
                                     </div>
-                                    <div className="col d-flex justify-content-end">
+                                    <div className="col-12 order-1 order-lg-2 col-lg-6 d-flex justify-content-center justify-content-lg-end">
                                         <div id="social-buttons"
                                              data-pointer-events="true"
                                              data-hover-only="true"

@@ -101,7 +101,7 @@ class Lab extends React.Component {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-12 col-md-6 col-lg-6 col-xl-4 offset-xl-2">
+                            <div className="px-5 pl-lg-5 pl-md-5 pr-md-0 px-xl-1 col-12 col-md-6 col-lg-6 col-xl-4 offset-xl-2">
                                 <h2 className="lab-small-header">Web</h2>
                                 <div className="divider"> </div>
                                 <div className="lab-link-wrapper"
@@ -138,7 +138,7 @@ class Lab extends React.Component {
                                     <div className="lab-link"> </div>
                                 </div>
                             </div>
-                            <div className="col-12 col-md-6 mt-3 col-lg-6 mt-md-0 col-xl-4">
+                            <div className="px-5 pr-lg-5 pr-md-5 pl-md-0 px-xl-1 col-12 col-md-6 mt-3 col-lg-6 mt-md-0 col-xl-4">
                                 <h2 className="lab-small-header">Android</h2>
                                 <div className="divider"> </div>
                                 <div className="lab-link-wrapper"
@@ -177,7 +177,7 @@ class Lab extends React.Component {
                                     <div className="lab-link"> </div>
                                 </div>
                             </div>
-                            <div className="col-12 mt-3 col-lg-12 col-xl-8 offset-xl-2 mt-lg-4">
+                            <div className="px-5 px-xl-1 col-12 mt-3 col-lg-12 col-xl-8 offset-xl-2 mt-lg-4">
                                 <h2 className="lab-small-header">Other stuff</h2>
                                 <div className="divider"> </div>
                                 <div className="lab-link-wrapper"

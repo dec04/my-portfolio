@@ -754,6 +754,38 @@ button, a {
     }
   }
   //endregion
+
+  //region Footer
+  #footer {
+    #email {
+      margin-top: 0 !important;
+      font-size: 1.8rem !important;
+    }
+
+    #about, #works {
+      margin-top: 30px !important;
+
+      h3 {
+        font-size: 2.2rem;
+      }
+
+      .works-link-wrapper {
+        a {
+          font-size: 1.2rem;
+          line-height: 2.4rem;
+        }
+      }
+    }
+
+    #about {
+      overflow-x: auto;
+
+      pre {
+        font-size: .5rem !important;
+      }
+    }
+  }
+  //endregion
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -814,6 +846,30 @@ button, a {
     a {
       font-size: 1rem !important;
       line-height: 1.8rem !important;
+    }
+  }
+  //endregion
+
+  //region Footer
+  #footer {
+    #about, #works {
+      margin-top: 30px !important;
+    }
+
+    #email {
+      margin-top: 0 !important;
+      font-size: 2.6rem !important;
+    }
+
+    #about {
+      overflow-x: auto;
+      pre {
+        font-size: .7rem !important;
+      }
+    }
+
+    #works {
+      text-align: left !important;
     }
   }
   //endregion
@@ -880,6 +936,30 @@ button, a {
     }
   }
   //endregion
+
+  //region Footer
+  #footer {
+    #about, #works {
+      margin-top: 30px !important;
+    }
+
+    #email {
+      margin-top: 0 !important;
+      font-size: 3.2rem !important;
+    }
+
+    #about {
+      overflow-x: auto;
+      pre {
+        font-size: .8rem !important;
+      }
+    }
+
+    #works {
+      text-align: left !important;
+    }
+  }
+  //endregion
 }
 
 // Large devices (desktops, 992px and up)
@@ -921,5 +1001,6 @@ button, a {
     }
   }
   //endregion
+
 }
 //endregion
