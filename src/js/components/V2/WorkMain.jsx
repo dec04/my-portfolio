@@ -160,7 +160,7 @@ class WorkMain extends React.Component {
                          data-pointer-events="true"
                          data-hover-only="true"
                          data-relative-input="true"
-                         className="col-8 offset-2">
+                         className="col-8 offset-2 mt-4 mt-md-0">
                         <p id="work-main-type-it-app-name"
                            data-depth=".03"
                            className="text-center"> </p>
@@ -171,12 +171,13 @@ class WorkMain extends React.Component {
                          data-pointer-events="true"
                          data-hover-only="true"
                          data-relative-input="true"
-                         className="col">
+                         className="col-12 col-lg-6">
                         <p id="work-main-type-it-app-description"
                            data-depth=".06"> </p>
                     </div>
-                    <div className="col">
+                    <div className="col-12 col-lg-6">
                         <div id="work-project"
+                             className="d-flex d-xl-block justify-content-center"
                              data-pointer-events="true"
                              data-hover-only="true"
                              data-relative-input="true">
@@ -192,8 +193,8 @@ class WorkMain extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col d-flex justify-content-end align-items-end">
+                <div className="row mt-5 mt-lg-0">
+                    <div className="col d-flex justify-content-center align-items-center justify-content-lg-end align-items-lg-end">
                         <div className="buttons">
                             <button onClick={() => {
                                 this.handleClick("dec")

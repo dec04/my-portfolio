@@ -61,10 +61,6 @@ class AppV2 extends React.Component {
                     img={this.state.mainBg}/>
                 <div id="main-fg"
                      className="main-fg">
-                    {/*<SimpleBar*/}
-                    {/*    style={{maxHeight: 980}}*/}
-                    {/*           autoHide={true}>*/}
-                    {/*</SimpleBar>*/}
                     <WorkBg img={this.state.workBg}>
                         <Header/>
                         <WorkMain bgHandle={this.changeBgHandle}/>

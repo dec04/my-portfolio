@@ -232,7 +232,7 @@ button, a {
   height: 64px !important;
 }
 
-.margit-t-140 {
+.margin-t-140 {
   margin-top: 140px !important;
 }
 
@@ -301,7 +301,7 @@ button, a {
     min-height: $workBgHeight !important;
     object-fit: cover;
     object-position: center;
-    background-size: 100%;
+    //background-size: 100%;
     background-position: center;
   }
 
@@ -478,8 +478,8 @@ button, a {
         a {
           transition: color, background-color .3s ease;
           position: absolute;
-          top: 100px !important;
-          left: 125px !important;
+          top: 100px;
+          left: 125px;
           color: $themeTextSecondaryColor !important;
           background-color: #000;
 
@@ -688,6 +688,165 @@ button, a {
         }
       }
     }
+  }
+}
+//endregion
+
+//region Responsive
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .margin-t-140 {
+    margin-top: 70px !important;
+  }
+
+  #logo {
+    img {
+      width: 100px !important;
+    }
+  }
+
+  #work-bg {
+    background-size: 300% !important;
+  }
+
+  #work-main-type-it-app-name {
+    font-size: 1.1rem !important;
+    max-height: 120px;
+  }
+
+  #work-main-type-it-app-description {
+    font-size: 1rem !important;
+    max-height: 150px !important;
+    text-align: center !important;
+  }
+
+  #work-project-logo {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  #work-project-button {
+    text-align: center;
+    top: 30px !important;
+    width: 150px !important;
+    left: calc(50% - 75px) !important;
+  }
+
+  #work-bg-overlay, #main-fg, #main-bg {
+    height: $workBgHeight !important;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .margin-t-140 {
+    margin-top: 70px !important;
+  }
+
+  #logo {
+    img {
+      width: 100px !important;
+    }
+  }
+
+  #work-bg {
+    background-size: 300% !important;
+  }
+
+  #work-main-type-it-app-name {
+    font-size: 1.4rem !important;
+    max-height: 120px;
+  }
+
+  #work-main-type-it-app-description {
+    font-size: 1.2rem !important;
+    max-height: 150px !important;
+    text-align: center !important;
+  }
+
+  #work-project-logo {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  #work-project-button {
+    text-align: center;
+    top: 30px !important;
+    width: 150px !important;
+    left: calc(50% - 75px) !important;
+  }
+
+  #work-bg-overlay, #main-fg, #main-bg {
+    height: $workBgHeight !important;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .margin-t-140 {
+    margin-top: 70px !important;
+  }
+
+  #logo {
+    img {
+      width: 100px !important;
+    }
+  }
+
+  #work-bg {
+    background-size: 300% !important;
+  }
+
+  #work-main-type-it-app-name {
+    font-size: 1.4rem !important;
+    max-height: 120px;
+  }
+
+  #work-main-type-it-app-description {
+    font-size: 1.2rem !important;
+    max-height: 150px !important;
+    text-align: center !important;
+  }
+
+  #work-project-logo {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  #work-project-button {
+    text-align: center;
+    top: 30px !important;
+    width: 150px !important;
+    left: calc(50% - 75px) !important;
+  }
+
+  #work-bg-overlay, #main-fg, #main-bg {
+    height: $workBgHeight !important;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #work-project-button {
+    top: 100px !important;
+    width: 150px !important;
+    left: calc(50% - 75px) !important;
+  }
+
+  #work-bg-overlay, #main-fg, #main-bg {
+    height: $workBgHeight !important;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  #work-project-button {
+    top: 100px !important;
+    left: 125px !important;
+  }
+
+  #work-bg-overlay, #main-fg, #main-bg {
+    height: $workBgHeight !important;
   }
 }
 //endregion
