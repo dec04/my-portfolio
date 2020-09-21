@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --mode development",
-    "n-dev": "cross-env NODE_ENV=development webpack --mode development && node dist/app.js",
+    "n-dev": "cross-env NODE_ENV=development webpack --mode development && babel-node dist/app.js",
     "dev-w": "cross-env NODE_ENV=development webpack --mode development --watch",
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open",
@@ -15,6 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.5",
     "@babel/preset-env": "^7.10.2",
     "@babel/preset-react": "^7.10.1",
     "@babel/preset-typescript": "^7.10.1",
@@ -45,6 +46,7 @@
     "axios": "^0.20.0",
     "backpax": "^1.0.3",
     "bootstrap": "^4.5.2",
+    "ejs": "^3.1.5",
     "emoji.css": "^1.0.5",
     "express": "^4.17.1",
     "geopattern": "^1.2.3",

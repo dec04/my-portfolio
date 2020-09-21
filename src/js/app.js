@@ -12,10 +12,12 @@ import GithubSvg from "@img/github.svg"
 import FacebookSvg from "@img/facebook.svg"
 import TwitterSvg from "@img/twitter.svg"
 import InstagramSvg from "@img/instagram.svg"
-
 import("lodash")
 
-ReactDOM.render(createElement(App), document.getElementById("main-container"))
+const appContainer = document.getElementById("main-container")
+
+if (!!appContainer)
+    ReactDOM.render(createElement(App), appContainer)
 
 document.addEventListener("DOMContentLoaded", () => {
     const startDelay = 170

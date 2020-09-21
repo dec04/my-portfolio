@@ -75,6 +75,15 @@ const plugins = () => {
                 collapseWhitespace: isProdMode
             }
         }),
+        new HTMLWebpackPlugin({
+            filename: "./views/work.html",
+            template: "./views/work.html",
+            inject: true,
+            excludeChunks: [],
+            minify: {
+                collapseWhitespace: isProdMode
+            }
+        }),
         new CleanWebpackPlugin({
             verbose: isDevMode,
             cleanOnceBeforeBuildPatterns: [path.join(__dirname, 'dist/**/*')]
