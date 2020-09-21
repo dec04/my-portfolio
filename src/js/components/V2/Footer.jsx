@@ -50,7 +50,7 @@ class Footer extends React.Component {
             "··}\n" +
             "··function skills() {\n" +
             "····return [\n" +
-            "........'HTML/CSS/JS', 'React', 'Node.js', 'jQuery', 'Bootstrap',\n" +
+            "........'HTML/CSS/JS', 'ReactJS', 'Node.js', 'jQuery', 'Bootstrap',\n" +
             "........'Sass', 'Express', 'PHP', 'MySql/SqLite/Postgres', 'GIT',\n" +
             "........'Webpack', 'Java (Android)', 'Jetpack Room', 'Linux'\n" +
             ".... ]\n" +
