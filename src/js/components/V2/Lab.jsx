@@ -4,7 +4,6 @@ import _ from "lodash"
 import Backpax from "backpax"
 import "vaguejs/Vague"
 import Vivus from "vivus/dist/vivus.min"
-import "emoji.css/dist/emoji.min.css"
 import LinkSvg from "@img/right-arrow.svg"
 
 class Lab extends React.Component {
