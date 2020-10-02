@@ -22,23 +22,6 @@ app.get("/", async (req, res) => {
 })
 
 app.get("/work/", async (req, res) => {
-    // // readFile must return promise instead do callback
-    // const readFile = promisify(_readFile)
-    // // Get html string from file
-    // const template = await readFile(path.join(__dirname + "/public/views/work.html"), "utf-8")
-    // // Replace html with ejs variables
-    // const html = ejs.render(
-    //     template,
-    //     {
-    //         workMainContainer: ReactDOMServer.renderToStaticMarkup(<SsrTest/>)
-    //     },
-    //     {
-    //         delimiter: "?"
-    //     }
-    // )
-    //
-    // res.send(html)
-
     const workJSX = ReactDOMServer.renderToString(<WorkPage />)
     const readFile = promisify(_readFile)
     await readFile(path.join(__dirname + "/public/views/work.html"), "utf-8", (err, data) => {
@@ -73,7 +56,7 @@ app.get("/work/:id", async (req, res) => {
                  <script type="text/javascript">
                      window.work = { "pageId": ${req.params.id} }
                  </script>`
-            )
+            ).replace(/\/.\//g, "/public/./")
         );
     })
 })

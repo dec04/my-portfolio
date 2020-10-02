@@ -60,6 +60,7 @@
     "react-dom": "^16.13.1",
     "react-syntax-highlighter": "^13.5.3",
     "scrollreveal": "^4.0.7",
+    "tilt.js": "^1.2.1",
     "typeit": "^7.0.4",
     "vaguejs": "0.0.6",
     "vivus": "^0.4.5"

@@ -6,6 +6,7 @@ const container = document.getElementById("work-main-container")
 
 if (!!container)
 ReactDOM.hydrate(
-    <WorkPage workId={!!window["work"] ? window["work"]["pageId"] : ""}/>,
+    <WorkPage
+        workId={!!window["work"] ? window["work"]["pageId"] : ""}/>,
     container
 )

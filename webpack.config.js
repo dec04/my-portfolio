@@ -80,7 +80,7 @@ const plugins = () => {
             filename: "./views/index.html",
             template: "./views/index.html",
             inject: true,
-            excludeChunks: [],
+            excludeChunks: ["workPage"],
             minify: {
                 collapseWhitespace: isProdMode
             }
@@ -89,7 +89,7 @@ const plugins = () => {
             filename: "./views/work.html",
             template: "./views/work.html",
             inject: true,
-            excludeChunks: [],
+            excludeChunks: ["indexPage"],
             minify: {
                 collapseWhitespace: isProdMode
             }
@@ -137,7 +137,8 @@ const clientConfig = {
         debug: "./js/AppDebug.js",
         bootstrap: "./js/bootstrap.js",
         fontawesome: "./js/fontawesome.js",
-        client: "./js/work.js"
+        indexPage: "./js/index.js",
+        workPage: "./js/work.js"
     },
     output: {
         filename: filename("js"),
