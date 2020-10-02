@@ -28,6 +28,7 @@ class WorkMain extends React.Component {
             appNameInstance: null,
             appDescInstance: null,
             curEl: 0,
+            link: "/",
             strings: [
                 {
                     name: "Order gas balloon app",
@@ -47,7 +48,8 @@ class WorkMain extends React.Component {
                         MobileImg3,
                         MobileImg4
                     ],
-                    logo: MobileSvg
+                    logo: MobileSvg,
+                    link: "work/2"
                 },
                 {
                     name: ["altaygaz22", "sibgaz.ru/gaz"],
@@ -65,7 +67,8 @@ class WorkMain extends React.Component {
                         GasImg3,
                         GasImg4
                     ],
-                    logo: WebSvg
+                    logo: WebSvg,
+                    link: "work/1"
                 },
             ]
         }
@@ -111,7 +114,8 @@ class WorkMain extends React.Component {
             next = 0
 
         this.setState({
-            curEl: next
+            curEl: next,
+            link: this.state.strings[next].link
         })
 
         let appName = new TypeIt("#work-main-type-it-app-name", {
@@ -187,7 +191,7 @@ class WorkMain extends React.Component {
                             >
                             </div>
                             <a id="work-project-button"
-                               href="#"
+                               href={!!this.state.link ? this.state.link : "/"}
                                data-depth=".4"
                                className="px-3 py-1 hoverable">enter <i className="ml-2 fas fa-level-down-alt"> </i></a>
                         </div>

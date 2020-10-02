@@ -4,8 +4,7 @@ import ReactDOMServer from "react-dom/server"
 import ejs from "ejs"
 import {readFile as _readFile} from "fs"
 import {promisify} from "util"
-import SsrTest from "@/js/components/V2/SsrTest.jsx"
-// import App from "@/js/components/V2/AppV2.jsx"
+import WorkPage from "@/js/components/V2/WorkPage.jsx"
 
 const path = require("path")
 const app = express()
@@ -20,46 +19,27 @@ app.set("view engine", "html")
 
 app.get("/", async (req, res) => {
     res.sendFile(path.join(__dirname + "/public/views/index.html"))
-    // const application = ReactDOMServer.renderToString(<App />)
-    // const scripts =
-    //     `<script type="text/javascript"></script>`
-    // const readFile = promisify(_readFile)
-    // await readFile(path.join(__dirname + "/public/views/index.html"), "utf-8", (err, data) => {
-    //     if (err) {
-    //         console.error("Something went wrong:", err);
-    //         return res.status(500).send("Oops, better luck next time!");
-    //     }
-    //
-    //     return res.status(200).send(
-    //         data.replace(
-    //             '<div id="main-container"></div>',
-    //             `<div id="main-container">${application}</div>${scripts}`
-    //         )
-    //     );
-    // })
 })
 
 app.get("/work/", async (req, res) => {
-    // readFile must return promise instead do callback
-    const readFile = promisify(_readFile)
-    // Get html string from file
-    const template = await readFile(path.join(__dirname + "/public/views/work.html"), "utf-8")
-    // Replace html with ejs variables
-    const html = ejs.render(
-        template,
-        {
-            workMainContainer: ReactDOMServer.renderToStaticMarkup(<SsrTest/>)
-        },
-        {
-            delimiter: "?"
-        }
-    )
+    // // readFile must return promise instead do callback
+    // const readFile = promisify(_readFile)
+    // // Get html string from file
+    // const template = await readFile(path.join(__dirname + "/public/views/work.html"), "utf-8")
+    // // Replace html with ejs variables
+    // const html = ejs.render(
+    //     template,
+    //     {
+    //         workMainContainer: ReactDOMServer.renderToStaticMarkup(<SsrTest/>)
+    //     },
+    //     {
+    //         delimiter: "?"
+    //     }
+    // )
+    //
+    // res.send(html)
 
-    res.send(html)
-})
-
-app.get("/work/:id", async (req, res) => {
-    const workComponent = ReactDOMServer.renderToString(<SsrTest workId={req.params.id} />)
+    const workJSX = ReactDOMServer.renderToString(<WorkPage />)
     const readFile = promisify(_readFile)
     await readFile(path.join(__dirname + "/public/views/work.html"), "utf-8", (err, data) => {
         if (err) {
@@ -70,7 +50,26 @@ app.get("/work/:id", async (req, res) => {
         return res.send(
             data.replace(
                 '<div id="work-main-container"></div>',
-                `<div id="work-main-container">${workComponent}</div>
+                `<div id="work-main-container">${workJSX}</div>
+                 <script type="text/javascript"></script>`
+            )
+        );
+    })
+})
+
+app.get("/work/:id", async (req, res) => {
+    const workJSX = ReactDOMServer.renderToString(<WorkPage workId={req.params.id} />)
+    const readFile = promisify(_readFile)
+    await readFile(path.join(__dirname + "/public/views/work.html"), "utf-8", (err, data) => {
+        if (err) {
+            console.error("Something went wrong:", err);
+            return res.status(500).send("Oops, better luck next time!");
+        }
+
+        return res.send(
+            data.replace(
+                '<div id="work-main-container"></div>',
+                `<div id="work-main-container">${workJSX}</div>
                  <script type="text/javascript">
                      window.work = { "pageId": ${req.params.id} }
                  </script>`

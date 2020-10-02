@@ -1,8 +1,11 @@
-import ReactDOM from "react-dom";
-import SsrTest from "@/js/components/V2/SsrTest.jsx";
-import React from "react";
+import ReactDOM from "react-dom"
+import React from "react"
+import WorkPage from "@/js/components/V2/WorkPage.jsx"
 
+const container = document.getElementById("work-main-container")
+
+if (!!container)
 ReactDOM.hydrate(
-    <SsrTest workId={window["work"]["pageId"]}/>,
-    document.getElementById("work-main-container")
+    <WorkPage workId={!!window["work"] ? window["work"]["pageId"] : ""}/>,
+    container
 )

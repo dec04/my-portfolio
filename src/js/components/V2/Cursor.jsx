@@ -55,7 +55,7 @@ class Cursor extends React.Component {
             TweenMax.to(follower, .3, {
                 scale: 5
             })
-            dot.style.opacity = 0
+            dot.style.opacity = .5
             cursorText.style.opacity = 1
             cursorText.innerHTML = !!e.target.getAttribute("data-hoverable") ?
                 e.target.getAttribute("data-hoverable") :

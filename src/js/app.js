@@ -21,7 +21,7 @@ if (!!appContainer)
     ReactDOM.render(createElement(App), appContainer)
 
 document.addEventListener("DOMContentLoaded", () => {
-    const startDelay = 170
+    const startDelay = 17000
     let afterLoadingFlag = true
 
     debug.store("DOM Content Loaded")
