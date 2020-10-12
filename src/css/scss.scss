@@ -769,6 +769,12 @@ button, a {
   #work-bg-overlay, #main-fg, #main-bg {
     height: $workBgHeight !important;
   }
+
+  .work-image {
+    .tilt-wrapper {
+      width: 100% !important;
+    }
+  }
   //endregion
 
   //region Lab
