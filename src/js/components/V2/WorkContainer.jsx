@@ -70,7 +70,9 @@ class WorkContainer extends Component {
 
         return(
             <div className="container">
-                {worksList[this.props.workId].elements.map((item, k) => row(item, k))}
+                {
+                    worksList[this.props.workId].elements.map((item, k) => row(item, k))
+                }
             </div>
         )
     }
