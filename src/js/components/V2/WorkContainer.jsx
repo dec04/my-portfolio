@@ -1,11 +1,13 @@
 import React, {Component} from "react"
-import webMockup from "@img/mockups/webMockup3.jpg"
 import Parallax from "parallax-js"
 import "tilt.js"
+import worksList from "@/js/models/WorksList"
 
 class WorkContainer extends Component {
     constructor(props) {
         super(props)
+
+        this.componentDidMount = this.componentDidMount.bind(this)
     }
 
     componentDidMount() {
@@ -22,50 +24,53 @@ class WorkContainer extends Component {
             maxGlare:       1       // From 0 - 1.
         })
 
-        $('.work-img-scene').map((i, e) =>
-            new Parallax(e).setInputElement(document.getElementById("main-fg")))
-        $('.work-header-scene').map((i, e) =>
-            new Parallax(e).setInputElement(document.getElementById("main-fg")))
-        $('.work-description-scene').map((i, e) =>
-            new Parallax(e).setInputElement(document.getElementById("main-fg")))
+        worksList[this.props.workId].elements.map((e, index) => {
+            new Parallax(document.getElementById(`work-img-scene-${index}`)).setInputElement(document.getElementById(`scene-${index}`))
+            new Parallax(document.getElementById(`work-header-scene-${index}`)).setInputElement(document.getElementById(`scene-${index}`))
+            new Parallax(document.getElementById(`work-description-scene-${index}`)).setInputElement(document.getElementById(`scene-${index}`))
+        })
     }
 
     render() {
+        const row = (item, k) => !!item ? <div className="row my-5 py-5 d-flex align-items-stretch" id={`scene-${k}`} key={k}>
+            <div className={`col-12 col-lg-6 d-flex justify-content-center ${k%2 ? "order-2" : ""}`}
+                 id={`work-img-scene-${k}`}
+                 data-pointer-events="true"
+                 data-hover-only="true"
+                 data-relative-input="true">
+                <a href={item.img}
+                   data-depth=".1"
+                   className="work-image d-flex justify-content-center"
+                   target="_blank">
+                    <div className="tilt tilt-wrapper">
+                        <img src={item.img}
+                             alt={item.img} />
+                        <div className="tilt-overlay hoverable"
+                             data-hoverable="show &rarr;"> </div>
+                    </div>
+                </a>
+            </div>
+            <div className={`col-12 col-lg-6 d-flex justify-content-center flex-column ${k%2 ? "order-1" : ""}`}>
+                <div id={`work-header-scene-${k}`}
+                     data-pointer-events="true"
+                     data-hover-only="true"
+                     data-relative-input="true">
+                    <h1 data-depth=".08" className="header mb-4">{item.header}</h1>
+                </div>
+                <div id={`work-description-scene-${k}`}
+                     data-pointer-events="true"
+                     data-hover-only="true"
+                     data-relative-input="true">
+                    <p data-depth=".12" className="description">
+                        {item.description}
+                    </p>
+                </div>
+            </div>
+        </div> : <div>Nothing to show</div>
+
         return(
             <div className="container">
-                <div className="row my-5 d-flex align-items-stretch" >
-                    <div className="work-img-scene col-12 col-lg-6 d-flex justify-content-center"
-                         data-pointer-events="true"
-                         data-hover-only="true"
-                         data-relative-input="true">
-                        <a href={webMockup}
-                           data-depth=".02"
-                           className="work-image text-center"
-                           target="_blank">
-                            <div className="tilt tilt-wrapper">
-                                <img src={webMockup}
-                                     alt={webMockup} />
-                                 <div className="tilt-overlay hoverable"
-                                      data-hoverable="show &rarr;"> </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-12 col-lg-6 d-flex justify-content-center flex-column">
-                        <div className="work-header-scene"
-                             data-pointer-events="true"
-                             data-hover-only="true"
-                             data-relative-input="true">
-                            <h1 data-depth=".04" className="header mb-4">Header</h1>
-                        </div>
-                        <div className="work-description-scene">
-                            <p data-depth=".06" className="description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae, deserunt dolorem earum
-                                error ex illum laudantium magni minima necessitatibus nobis odio officia pariatur quibusdam
-                                recusandae sequi ut veritatis voluptates.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                {worksList[this.props.workId].elements.map((item, k) => row(item, k))}
             </div>
         )
     }
