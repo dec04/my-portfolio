@@ -19,9 +19,10 @@ fs.readdirSync('node_modules')
     })
 
 const isDevMode = process.env.NODE_ENV === "development"
+const isDeploy = process.env.HEROKU === "true"
 const isProdMode = !isDevMode
 
-const filename = ext => isDevMode ? `[name].${ext}` : `[name].[contenthash].${ext}`
+const filename = ext => isDevMode || isDeploy ? `[name].${ext}` : `[name].[contenthash].${ext}`
 
 const cssLoaders = extra => {
     const loaders = [
@@ -120,7 +121,7 @@ const plugins = () => {
         }),
     ]
 
-    if (isProdMode)
+    if (isProdMode && !isDeploy)
         base.push(new BundleAnalyzerPlugin())
 
     return base
