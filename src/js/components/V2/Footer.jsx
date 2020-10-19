@@ -96,7 +96,7 @@ class Footer extends React.Component {
                             </div>
                             <div id="works"
                                  className="col-12 col-xl-4 text-right">
-                                <h3 className="footer-small-header">Works</h3>
+                                <h3 className="footer-small-header">Work links</h3>
                                 <div className="divider"> </div>
                                 <div className="work-links works-link-wrapper"
                                      data-pointer-events="true"

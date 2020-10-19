@@ -32,8 +32,8 @@ class WorkContainer extends Component {
     }
 
     render() {
-        const row = (item, k) => !!item ? <div className="row my-5 py-5 d-flex align-items-stretch" id={`scene-${k}`} key={k}>
-            <div className={`col-12 col-lg-6 d-flex justify-content-center ${k%2 ? "order-2" : ""}`}
+        const row = (item, k) => !!item ? <div className="row my-lg-5 py-lg-5 mb-5 d-flex align-items-stretch" id={`scene-${k}`} key={k}>
+            <div className={`col-12 col-lg-6 d-flex justify-content-center ${k%2 ? "order-lg-2" : ""}`}
                  id={`work-img-scene-${k}`}
                  data-pointer-events="true"
                  data-hover-only="true"
@@ -50,18 +50,18 @@ class WorkContainer extends Component {
                     </div>
                 </a>
             </div>
-            <div className={`col-12 col-lg-6 d-flex justify-content-center flex-column ${k%2 ? "order-1" : ""}`}>
+            <div className={`col-12 col-lg-6 d-flex justify-content-center flex-column ${k%2 ? "order-lg-1" : ""}`}>
                 <div id={`work-header-scene-${k}`}
                      data-pointer-events="true"
                      data-hover-only="true"
                      data-relative-input="true">
-                    <h1 data-depth=".08" className="header mb-4">{item.header}</h1>
+                    <h2 data-depth=".08" className="header mb-4 mt-4 mt-lg-0 text-center text-lg-left">{item.header}</h2>
                 </div>
                 <div id={`work-description-scene-${k}`}
                      data-pointer-events="true"
                      data-hover-only="true"
                      data-relative-input="true">
-                    <p data-depth=".12" className="description">
+                    <p data-depth=".12" className="description text-center text-lg-left">
                         {item.description}
                     </p>
                 </div>
@@ -69,7 +69,13 @@ class WorkContainer extends Component {
         </div> : <div>Nothing to show</div>
 
         return(
-            <div className="container">
+            <div id="work-inner-wrapper" className="container">
+                <div className="row">
+                    <div className="col-12 my-5">
+                        <h1 className="text-center">{worksList[this.props.workId].title}</h1>
+                        <p className="text-center my-5">{worksList[this.props.workId].description}</p>
+                    </div>
+                </div>
                 {
                     worksList[this.props.workId].elements.map((item, k) => row(item, k))
                 }

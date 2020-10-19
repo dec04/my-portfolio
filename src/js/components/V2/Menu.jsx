@@ -2,6 +2,7 @@ import React from "react"
 import * as GeoPattern from "geopattern"
 import _ from "lodash"
 import MenuBg from "@/js/components/V2/MenuBg.jsx"
+import WorksList from "@/js/models/WorksList"
 
 class Menu extends React.Component {
     constructor(props) {
@@ -50,18 +51,24 @@ class Menu extends React.Component {
                                     </span>
                                 </h1>
                                 <h3 className="menu-header-small mb-4">Links</h3>
-                                <div className="menu-link-wrapper mt-2">
-                                    <a href="#"
-                                       className="hoverable"
-                                       onMouseEnter={this.linkHoverHandle}
-                                       data-hoverable="link &rarr;">About</a>
-                                </div>
-                                <div className="menu-link-wrapper mt-2">
-                                    <a href="#"
-                                       className="hoverable"
-                                       onMouseEnter={this.linkHoverHandle}
-                                       data-hoverable="link &rarr;">Journal</a>
-                                </div>
+                                {
+                                    WorksList.map((item, n) => {
+                                        if (n > 0)
+                                            return <div className="menu-link-wrapper mt-2" key={n}>
+                                                <a href={`/work/${n}`}
+                                                   className="hoverable"
+                                                   onMouseEnter={this.linkHoverHandle}
+                                                   data-hoverable="link &rarr;">{item.title}</a>
+                                            </div>
+                                        else
+                                            return <div className="menu-link-wrapper mt-2" key={n}>
+                                                <a href={`/`}
+                                                   className="hoverable"
+                                                   onMouseEnter={this.linkHoverHandle}
+                                                   data-hoverable="link &rarr;">Home</a>
+                                            </div>
+                                    })
+                                }
                             </div>
                         </div>
                     </div>
