@@ -8,7 +8,7 @@ import WorkPage from "@/js/components/V2/WorkPage.jsx"
 
 const path = require("path")
 const app = express()
-const port = 8000
+const port = process.env.PORT || 8000
 
 // add folder "app" to use in path http://sitename/app/**/*
 app.use("/public", express.static(__dirname + "/public"))
