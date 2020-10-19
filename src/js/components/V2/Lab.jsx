@@ -66,21 +66,21 @@ class Lab extends React.Component {
     }
 
     linkHoverHandler(e) {
-        if (!!e.target.querySelector(".lab-link"))
-            new Vivus(e.target.querySelector(".lab-link"), {
-                file: LinkSvg,
-                type: 'delayed',
-                duration: 80,
-                onReady: function (myVivus) {
-                    myVivus.el.setAttribute('width', '30px')
-                    myVivus.el.setAttribute('filter', 'invert(100%) sepia(83%) saturate(0%) hue-rotate(298deg) brightness(109%) contrast(101%)')
-                }
-            })
+        // if (!!e.target.querySelector(".lab-link"))
+        //     new Vivus(e.target.querySelector(".lab-link"), {
+        //         file: LinkSvg,
+        //         type: 'delayed',
+        //         duration: 80,
+        //         onReady: function (myVivus) {
+        //             myVivus.el.setAttribute('width', '30px')
+        //             myVivus.el.setAttribute('filter', 'invert(100%) sepia(83%) saturate(0%) hue-rotate(298deg) brightness(109%) contrast(101%)')
+        //         }
+        //     })
     }
 
     linkLeaveHandler(e) {
-        if (!!e.target.querySelector(".lab-link"))
-            e.target.querySelector(".lab-link").innerHTML = ""
+        // if (!!e.target.querySelector(".lab-link"))
+        //     e.target.querySelector(".lab-link").innerHTML = ""
     }
 
     render() {
@@ -123,7 +123,7 @@ class Lab extends React.Component {
                                      onMouseEnter={this.linkHoverHandler}
                                      onMouseLeave={this.linkLeaveHandler}>
                                     <a href="#" className="hoverable" data-hoverable="link &rarr;">Reworking akgs.ru
-                                        [<span className="ec ec-raised-hand"> </span>WIP <span
+                                        [WIP <span
                                             className="ec ec-no-entry"></span>]</a>
                                     <div className="lab-link"> </div>
                                 </div>
@@ -144,17 +144,14 @@ class Lab extends React.Component {
                                      onMouseEnter={this.linkHoverHandler}
                                      onMouseLeave={this.linkLeaveHandler}>
                                     <a href="https://play.google.com/store/apps/details?id=com.decoy.gasbaloonapp.a"
-                                       className="hoverable" data-hoverable="link &rarr;">Gas balloon <span
-                                        className="ec ec-balloon"> </span> app for
-                                        akgs.ru</a>
+                                       className="hoverable" data-hoverable="link &rarr;">Gas balloon app (akgs.ru)</a>
                                     <div className="lab-link"> </div>
                                 </div>
                                 <div className="lab-link-wrapper"
                                      onMouseEnter={this.linkHoverHandler}
                                      onMouseLeave={this.linkLeaveHandler}>
                                     <a href="https://play.google.com/store/apps/details?id=com.decoy.gasbaloonapp.n"
-                                       className="hoverable" data-hoverable="link &rarr;">Gas balloon app for
-                                        sibgaz.ru</a>
+                                       className="hoverable" data-hoverable="link &rarr;">Gas balloon app (sibgaz.ru)</a>
                                     <div className="lab-link"> </div>
                                 </div>
                                 <div className="lab-link-wrapper"

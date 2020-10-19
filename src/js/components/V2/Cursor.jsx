@@ -7,6 +7,14 @@ class Cursor extends React.Component {
     }
 
     componentDidMount() {
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+            // true for mobile device
+            // alert("mobile")
+        }else{
+            // false for not mobile device
+            // alert("not mobile")
+        }
+
         //region CURSOR
         let cursor = document.querySelector(".cursor__ball--small"),
             dot = document.querySelector("#dot"),
@@ -52,10 +60,19 @@ class Cursor extends React.Component {
             mouseY = e.clientY
         })
         hoverable.forEach(el => el.addEventListener("mouseenter", (e) => {
-            TweenMax.to(follower, .3, {
-                scale: 5
-            })
-            dot.style.opacity = .5
+            if (!!e.target.getAttribute("data-hoverable"))
+                TweenMax.to(follower, .3, {
+                    scale: 5,
+                    fill: "rgba(0,0,0,.9)",
+                    zIndex: 101
+                })
+            else
+                TweenMax.to(follower, .3, {
+                    scale: 5,
+                    fill: "rgba(0,0,0,.2)",
+                    zIndex: 11
+                })
+            dot.style.opacity = .8
             cursorText.style.opacity = 1
             cursorText.innerHTML = !!e.target.getAttribute("data-hoverable") ?
                 e.target.getAttribute("data-hoverable") :
@@ -63,7 +80,8 @@ class Cursor extends React.Component {
         }))
         hoverable.forEach(el => el.addEventListener("mouseleave", (e) => {
             TweenMax.to(follower, .3, {
-                scale: 1
+                scale: 1,
+                fill: "rgba(255,255,255,0)"
             })
             dot.style.opacity = 1
             cursorText.style.opacity = 0
@@ -76,7 +94,7 @@ class Cursor extends React.Component {
             <div className="cursor">
                 <div className="cursor__ball cursor__ball--big ">
                     <svg height="40" width="40">
-                        <circle cx="20" cy="20" r="12" strokeWidth="0"> </circle>
+                        <circle cx="20" cy="20" r="12" strokeWidth=".5"> </circle>
                     </svg>
                 </div>
 
