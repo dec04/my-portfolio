@@ -19,7 +19,7 @@ fs.readdirSync('node_modules')
     })
 
 const isDevMode = process.env.NODE_ENV === "development"
-const isDeploy = process.env.HEROKU === "true"
+const isDeploy = process.env.DEPLOY === "true"
 const isProdMode = !isDevMode
 
 const filename = ext => isDevMode || isDeploy ? `[name].${ext}` : `[name].[contenthash].${ext}`

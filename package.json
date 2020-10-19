@@ -7,7 +7,7 @@
     "dev": "cross-env NODE_ENV=development webpack --mode development",
     "n-dev": "cross-env NODE_ENV=development webpack --mode development && babel-node dist/app.js",
     "dev-w": "cross-env NODE_ENV=development webpack --mode development --watch",
-    "build": "cross-env NODE_ENV=production HEROKU=true webpack --mode production",
+    "build": "cross-env NODE_ENV=production DEPLOY=true webpack --mode production",
     "start": "babel-node dist/app.js",
     "stats": "webpack --json > stats.json && webpack-bundle-analyzer stats.json"
   },
