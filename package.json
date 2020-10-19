@@ -7,10 +7,10 @@
     "dev": "cross-env NODE_ENV=development webpack --mode development",
     "n-dev": "cross-env NODE_ENV=development webpack --mode development && babel-node dist/app.js",
     "dev-w": "cross-env NODE_ENV=development webpack --mode development --watch",
-    "prod": "cross-env NODE_ENV=production webpack --mode production",
-    "build": "cross-env NODE_ENV=production HEROKU=true webpack --mode production && babel-node dist/app.js",
+    "build": "cross-env NODE_ENV=production HEROKU=true webpack --mode production",
     "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open",
-    "stats": "webpack --json > stats.json && webpack-bundle-analyzer stats.json"
+    "stats": "webpack --json > stats.json && webpack-bundle-analyzer stats.json",
+    "heroku": "babel-node dist/app.js"
   },
   "author": "dec04 <dmedia.decoy@gmail.com>",
   "license": "ISC",
