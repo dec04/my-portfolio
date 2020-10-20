@@ -33,8 +33,8 @@ You will free to use this code by open source projects.
 <a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen1.png" width="250"></a>
 <a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen2.png" width="250"></a>
 <a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen3.png" width="250"></a>
-<a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen4.png" width="325"></a>
-<a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen5.png" width="325"></a>
+<a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen4.png" width="375"></a>
+<a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen5.png" width="375"></a>
 
 Happy hacking. :heart_decoration:
 
