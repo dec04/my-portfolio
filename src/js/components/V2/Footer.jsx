@@ -170,10 +170,10 @@ class Footer extends React.Component {
                                              data-hover-only="true"
                                              data-relative-input="true">
                                             <div data-depth=".038">
-                                                <div id="github-social" className="social-icon-wrapper hoverable" data-hoverable="link &rarr;"> </div>
-                                                <div id="facebook-social" className="social-icon-wrapper hoverable" data-hoverable="link &rarr;"> </div>
-                                                <div id="twitter-social" className="social-icon-wrapper hoverable" data-hoverable="link &rarr;"> </div>
-                                                <div id="instagram-social" className="social-icon-wrapper hoverable" data-hoverable="link &rarr;"> </div>
+                                                <a href="https://https://github.com/dec04/"><div id="github-social" className="social-icon-wrapper hoverable" data-hoverable="link &rarr;"> </div></a>
+                                                <a href="https://www.facebook.com/dmediadecoy"><div id="facebook-social" className="social-icon-wrapper hoverable" data-hoverable="link &rarr;"> </div></a>
+                                                <a href="https://twitter.com/04_dec"><div id="twitter-social" className="social-icon-wrapper hoverable" data-hoverable="link &rarr;"> </div></a>
+                                                <a href="https://www.instagram.com/dmedia.decoy/"><div id="instagram-social" className="social-icon-wrapper hoverable" data-hoverable="link &rarr;"> </div></a>
                                             </div>
                                         </div>
                                     </div>
