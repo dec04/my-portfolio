@@ -104,6 +104,7 @@ class Footer extends React.Component {
                                      data-relative-input="true">
                                     <a data-depth=".06"
                                        href="https://altaygaz22.ru"
+                                       target="_blank" rel="noopener"
                                        className="hoverable"
                                        data-hoverable="link  &rarr;">
                                         Site altaygaz22.ru</a>
@@ -114,6 +115,7 @@ class Footer extends React.Component {
                                      data-relative-input="true">
                                     <a data-depth=".06"
                                        href="https://sibgaz.ru/gaz/"
+                                       target="_blank" rel="noopener"
                                        className="hoverable"
                                        data-hoverable="link  &rarr;">
                                         Site sibgaz.ru/gas/</a>
@@ -124,6 +126,7 @@ class Footer extends React.Component {
                                      data-relative-input="true">
                                     <a data-depth=".06"
                                        href="https://play.google.com/store/apps/details?id=com.decoy.gasbaloonapp.a"
+                                       target="_blank" rel="noopener"
                                        className="hoverable"
                                        data-hoverable="link  &rarr;">
                                         Android app for altaygaz22.ru</a>
@@ -134,6 +137,7 @@ class Footer extends React.Component {
                                      data-relative-input="true">
                                     <a data-depth=".06"
                                        href="https://play.google.com/store/apps/details?id=com.decoy.gasbaloonapp.n"
+                                       target="_blank" rel="noopener"
                                        className="hoverable"
                                        data-hoverable="link  &rarr;">
                                         Android app for sibgaz.ru/gaz</a>
@@ -144,6 +148,7 @@ class Footer extends React.Component {
                                      data-relative-input="true">
                                     <a data-depth=".06"
                                        href="#"
+                                       target="_blank" rel="noopener"
                                        className="hoverable"
                                        data-hoverable="link  &rarr;">
                                         Reworking akgs.ru</a>
@@ -170,10 +175,10 @@ class Footer extends React.Component {
                                              data-hover-only="true"
                                              data-relative-input="true">
                                             <div data-depth=".038">
-                                                <a href="https://https://github.com/dec04/"><div id="github-social" className="social-icon-wrapper hoverable" data-hoverable="link &rarr;"> </div></a>
-                                                <a href="https://www.facebook.com/dmediadecoy"><div id="facebook-social" className="social-icon-wrapper hoverable" data-hoverable="link &rarr;"> </div></a>
-                                                <a href="https://twitter.com/04_dec"><div id="twitter-social" className="social-icon-wrapper hoverable" data-hoverable="link &rarr;"> </div></a>
-                                                <a href="https://www.instagram.com/dmedia.decoy/"><div id="instagram-social" className="social-icon-wrapper hoverable" data-hoverable="link &rarr;"> </div></a>
+                                                <a href="https://github.com/dec04/" target="_blank" rel="noopener"><div id="github-social" className="social-icon-wrapper hoverable" data-hoverable="link &rarr;"> </div></a>
+                                                <a href="https://www.facebook.com/dmediadecoy" target="_blank" rel="noopener"><div id="facebook-social" className="social-icon-wrapper hoverable" data-hoverable="link &rarr;"> </div></a>
+                                                <a href="https://twitter.com/04_dec" target="_blank" rel="noopener"><div id="twitter-social" className="social-icon-wrapper hoverable" data-hoverable="link &rarr;"> </div></a>
+                                                <a href="https://www.instagram.com/dmedia.decoy/" target="_blank" rel="noopener"><div id="instagram-social" className="social-icon-wrapper hoverable" data-hoverable="link &rarr;"> </div></a>
                                             </div>
                                         </div>
                                     </div>
