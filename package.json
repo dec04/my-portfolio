@@ -1,7 +1,7 @@
 {
-  "name": "webpack-base-app",
+  "name": "dec04-portfolio",
   "version": "1.0.0",
-  "description": "webpack base application by dec04",
+  "description": "Dec04 Portfolio site",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --mode development",
