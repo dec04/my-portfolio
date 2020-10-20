@@ -30,11 +30,11 @@ You will free to use this code by open source projects.
  2. Random background pattern generator
  3. Dynamicaly changed background on main section when switching project
 
-<a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen1.png" width="300"></a>
-<a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen2.png" width="300"></a>
-<a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen3.png" width="300"></a>
-<a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen4.png" width="450"></a>
-<a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen5.png" width="450"></a>
+<a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen1.png" width="250"></a>
+<a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen2.png" width="250"></a>
+<a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen3.png" width="250"></a>
+<a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen4.png" width="325"></a>
+<a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen5.png" width="325"></a>
 
 Happy hacking. :heart_decoration:
 
