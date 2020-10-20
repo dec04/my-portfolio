@@ -106,7 +106,7 @@ class Lab extends React.Component {
                                 <div className="lab-link-wrapper"
                                      onMouseEnter={this.linkHoverHandler}
                                      onMouseLeave={this.linkLeaveHandler}>
-                                    <a href="https://altaygaz22.ru" className="hoverable" data-hoverable="link &rarr;">Site
+                                    <a href="https://altaygaz22.ru" target="_blank" rel="noopener" className="hoverable" data-hoverable="link &rarr;">Site
                                         altaygaz22.ru <span
                                             className="ec ec-fuelpump"> </span> </a>
                                     <div className="lab-link"> </div>
@@ -114,7 +114,7 @@ class Lab extends React.Component {
                                 <div className="lab-link-wrapper"
                                      onMouseEnter={this.linkHoverHandler}
                                      onMouseLeave={this.linkLeaveHandler}>
-                                    <a href="https://sibgaz.ru/gaz/" className="hoverable" data-hoverable="link &rarr;">Site
+                                    <a href="https://sibgaz.ru/gaz/" target="_blank" rel="noopener" className="hoverable" data-hoverable="link &rarr;">Site
                                         sibgaz.ru/gaz/ <span
                                             className="ec ec-fuelpump"> </span> </a>
                                     <div className="lab-link"> </div>
@@ -122,7 +122,7 @@ class Lab extends React.Component {
                                 <div className="lab-link-wrapper"
                                      onMouseEnter={this.linkHoverHandler}
                                      onMouseLeave={this.linkLeaveHandler}>
-                                    <a href="#" className="hoverable" data-hoverable="link &rarr;">Reworking akgs.ru
+                                    <a href="#" className="hoverable" target="_blank" rel="noopener" data-hoverable="link &rarr;">Reworking akgs.ru
                                         [WIP <span
                                             className="ec ec-no-entry"></span>]</a>
                                     <div className="lab-link"> </div>
@@ -130,7 +130,7 @@ class Lab extends React.Component {
                                 <div className="lab-link-wrapper"
                                      onMouseEnter={this.linkHoverHandler}
                                      onMouseLeave={this.linkLeaveHandler}>
-                                    <a href="https://github.com/dec04/webpack-base-app" className="hoverable"
+                                    <a href="https://github.com/dec04/webpack-base-app" className="hoverable" target="_blank" rel="noopener"
                                        data-hoverable="link &rarr;">Webpack base app <span
                                         className="ec ec-package"> </span> <span
                                         className="ec ec-school-satchel"> </span> </a>
@@ -143,21 +143,21 @@ class Lab extends React.Component {
                                 <div className="lab-link-wrapper"
                                      onMouseEnter={this.linkHoverHandler}
                                      onMouseLeave={this.linkLeaveHandler}>
-                                    <a href="https://play.google.com/store/apps/details?id=com.decoy.gasbaloonapp.a"
+                                    <a href="https://play.google.com/store/apps/details?id=com.decoy.gasbaloonapp.a" target="_blank" rel="noopener"
                                        className="hoverable" data-hoverable="link &rarr;">Gas balloon app (akgs.ru)</a>
                                     <div className="lab-link"> </div>
                                 </div>
                                 <div className="lab-link-wrapper"
                                      onMouseEnter={this.linkHoverHandler}
                                      onMouseLeave={this.linkLeaveHandler}>
-                                    <a href="https://play.google.com/store/apps/details?id=com.decoy.gasbaloonapp.n"
+                                    <a href="https://play.google.com/store/apps/details?id=com.decoy.gasbaloonapp.n" target="_blank" rel="noopener"
                                        className="hoverable" data-hoverable="link &rarr;">Gas balloon app (sibgaz.ru)</a>
                                     <div className="lab-link"> </div>
                                 </div>
                                 <div className="lab-link-wrapper"
                                      onMouseEnter={this.linkHoverHandler}
                                      onMouseLeave={this.linkLeaveHandler}>
-                                    <a href="https://github.com/dec04/PermissionUtilsLibrary" className="hoverable"
+                                    <a href="https://github.com/dec04/PermissionUtilsLibrary" className="hoverable" target="_blank" rel="noopener"
                                        data-hoverable="link &rarr;">Android permission utils <span
                                         className="ec ec-iphone"> </span> </a>
                                     <div className="lab-link"> </div>
@@ -165,7 +165,7 @@ class Lab extends React.Component {
                                 <div className="lab-link-wrapper"
                                      onMouseEnter={this.linkHoverHandler}
                                      onMouseLeave={this.linkLeaveHandler}>
-                                    <a href="https://github.com/dec04/vacancy-test-app" className="hoverable"
+                                    <a href="https://github.com/dec04/vacancy-test-app" className="hoverable" target="_blank" rel="noopener"
                                        data-hoverable="link &rarr;">Small vacancy test app <span
                                         className="ec ec-memo"> </span>
                                         <span className="ec ec-hourglass"> </span>
@@ -179,7 +179,7 @@ class Lab extends React.Component {
                                 <div className="lab-link-wrapper"
                                      onMouseEnter={this.linkHoverHandler}
                                      onMouseLeave={this.linkLeaveHandler}>
-                                    <a href="https://github.com/dec04/Flutter-Travel-App" className="hoverable"
+                                    <a href="https://github.com/dec04/Flutter-Travel-App" className="hoverable" target="_blank" rel="noopener"
                                        data-hoverable="link &rarr;">Flutter travel app [<span
                                         className="ec ec-building-construction"> </span> concept]</a>
                                     <div className="lab-link"> </div>
