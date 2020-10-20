@@ -1,4 +1,5 @@
 # Dec04 portfolio website
+## Available on [herokuapp.com](https://dec04-pf.herokuapp.com/)
 
 ![](https://img.shields.io/github/deployments/dec04/my-portfolio/dec04-pf?style=for-the-badge)
 ![](https://img.shields.io/github/package-json/v/dec04/my-portfolio?style=for-the-badge)
@@ -30,11 +31,11 @@ You will free to use this code by open source projects.
  2. Random background pattern generator
  3. Dynamicaly changed background on main section when switching project
 
-<a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen1.png" width="250"></a>
-<a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen2.png" width="250"></a>
-<a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen3.png" width="250"></a>
-<a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen4.png" width="375"></a>
-<a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen5.png" width="375"></a>
+<a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen1.png" width="260"></a>
+<a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen2.png" width="260"></a>
+<a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen3.png" width="260"></a>
+<a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen4.png" width="390"></a>
+<a href="https://ko-fi.com/dmediadecoy"><img src="exampleImgs/prScreen5.png" width="390"></a>
 
 Happy hacking. :heart_decoration:
 
