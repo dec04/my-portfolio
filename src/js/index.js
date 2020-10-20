@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ScrollReveal().reveal(".lab-big-header", {reset: true, distance: "-100px", origin: "right"})
     ScrollReveal().reveal(".divider", {reset: true, distance: "-30px", interval: 100})
     ScrollReveal().reveal("#github-social", {
-        reset: true, distance: "30px", interval: 100, afterReveal: (el) => {
+        reset: true, distance: "0", interval: 100, afterReveal: (el) => {
             new Vivus(el, {
                 file: GithubSvg,
                 type: 'delayed',
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
         beforeReveal: (el) => $(el).html("")
     })
     ScrollReveal().reveal("#facebook-social", {
-        reset: true, distance: "30px", interval: 100, afterReveal: (el) => {
+        reset: true, distance: "0", interval: 100, afterReveal: (el) => {
             new Vivus(el, {
                 file: FacebookSvg,
                 type: 'delayed',
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
         beforeReveal: (el) => $(el).html("")
     })
     ScrollReveal().reveal("#twitter-social", {
-        reset: true, distance: "30px", interval: 100, afterReveal: (el) => {
+        reset: true, distance: "0", interval: 100, afterReveal: (el) => {
             new Vivus(el, {
                 file: TwitterSvg,
                 type: 'delayed',
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
         beforeReveal: (el) => $(el).html("")
     })
     ScrollReveal().reveal("#instagram-social", {
-        reset: true, distance: "30px", interval: 100, afterReveal: (el) => {
+        reset: true, distance: "0", interval: 100, afterReveal: (el) => {
             new Vivus(el, {
                 file: InstagramSvg,
                 type: 'delayed',

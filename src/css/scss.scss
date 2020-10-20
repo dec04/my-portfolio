@@ -854,6 +854,18 @@ button, a {
       }
     }
   }
+
+  #copyright {
+    .social-icon-wrapper {
+      width: auto !important;
+      border: none !important;
+      padding: 10px !important;
+
+      svg {
+        width: 30px !important;
+      }
+    }
+  }
   //endregion
 }
 
