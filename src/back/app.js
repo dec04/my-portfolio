@@ -44,8 +44,8 @@ app.get("/work/", async (req, res) => {
         return res.send(
             data.replace(
                 '<div id="work-main-container"></div>',
-                escape(`<div id="work-main-container">${workJSX}</div>
-                 <script type="text/javascript"></script>`)
+                `<div id="work-main-container">${workJSX}</div>
+                 <script type="text/javascript"></script>`
             )
         );
     })
@@ -65,7 +65,7 @@ app.get("/work/:id", async (req, res) => {
                 '<div id="work-main-container"></div>',
                 `<div id="work-main-container">${workJSX}</div>
                  <script type="text/javascript">
-                     window.work = { "pageId": ${req.params.id} }
+                     window.work = { "pageId": ${escape(req.params.id)} }
                  </script>`
             ).replace(/\/.\//g, "/public/./")
         );
