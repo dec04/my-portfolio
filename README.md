@@ -1,4 +1,5 @@
 ![CodeQL](https://github.com/dec04/my-portfolio/workflows/CodeQL/badge.svg)
+![Update README](https://github.com/dec04/my-portfolio/workflows/Update%20README/badge.svg)
 
 # Dec04 portfolio website
 ## Available on [herokuapp.com](https://dec04-pf.herokuapp.com/)
