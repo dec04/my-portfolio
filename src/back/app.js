@@ -5,10 +5,21 @@ import ejs from "ejs"
 import {readFile as _readFile} from "fs"
 import {promisify} from "util"
 import WorkPage from "@/js/components/V2/WorkPage.jsx"
+import RateLimit from "express-rate-limit"
+import escape from "escape-html"
 
 const path = require("path")
 const app = express()
 const port = process.env.PORT || 8000
+
+// set up rate limiter: maximum of 100 requests per minute
+let limiter = new RateLimit({
+    windowMs: 1*60*1000, // 1 minute
+    max: 2000
+})
+
+// apply rate limiter to all requests
+app.use(limiter)
 
 // add folder "app" to use in path http://sitename/app/**/*
 app.use("/public", express.static(__dirname + "/public"))
@@ -33,8 +44,8 @@ app.get("/work/", async (req, res) => {
         return res.send(
             data.replace(
                 '<div id="work-main-container"></div>',
-                `<div id="work-main-container">${workJSX}</div>
-                 <script type="text/javascript"></script>`
+                escape(`<div id="work-main-container">${workJSX}</div>
+                 <script type="text/javascript"></script>`)
             )
         );
     })

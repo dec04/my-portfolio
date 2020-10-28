@@ -41,7 +41,8 @@ class WorkContainer extends Component {
                 <a href={item.img}
                    data-depth=".1"
                    className="work-image d-flex justify-content-center"
-                   target="_blank">
+                   target="_blank"
+                   rel="noopener noreferrer">
                     <div className="tilt tilt-wrapper">
                         <img src={item.img}
                              alt={item.img} />
