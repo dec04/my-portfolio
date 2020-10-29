@@ -19,6 +19,8 @@ let limiter = new RateLimit({
     max: 2000           // 2000 request per minute
 })
 
+console.log("TEST")
+
 // apply rate limiter to all requests
 app.use(limiter)
 
