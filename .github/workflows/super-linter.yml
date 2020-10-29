@@ -48,7 +48,7 @@ jobs:
           VALIDATE_ALL_CODEBASE: true
           LOG_FILE: super-linter.log
           OUTPUT_FORMAT: tap
-          OUTPUT_FOLDER: slReport
+          OUTPUT_FOLDER: /report
           OUTPUT_DETAILS: simpler
           VALIDATE_CSS: true
           VALIDATE_ENV: true
@@ -64,6 +64,5 @@ jobs:
           VALIDATE_PHP_PHPSTAN: true
           VALIDATE_PHP_PSALM: true
           VALIDATE_SQL: true
-          VALIDATE_YAML: true
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
