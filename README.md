@@ -20,6 +20,11 @@ You will free to use this code by open source projects.
 <hr>
 
 <!--START_SECTION:activity-->
+1. 🎉 Merged PR [#2](https://github.com/dec04/PermissionUtilsLibrary/pull/2) in [dec04/PermissionUtilsLibrary](https://github.com/dec04/PermissionUtilsLibrary)
+2. 💪 Opened PR [#2](https://github.com/dec04/PermissionUtilsLibrary/pull/2) in [dec04/PermissionUtilsLibrary](https://github.com/dec04/PermissionUtilsLibrary)
+3. 🎉 Merged PR [#2](https://github.com/dec04/webpack-base-app/pull/2) in [dec04/webpack-base-app](https://github.com/dec04/webpack-base-app)
+4. 💪 Opened PR [#2](https://github.com/dec04/webpack-base-app/pull/2) in [dec04/webpack-base-app](https://github.com/dec04/webpack-base-app)
+5. 🎉 Merged PR [#1](https://github.com/dec04/webpack-base-app/pull/1) in [dec04/webpack-base-app](https://github.com/dec04/webpack-base-app)
 <!--END_SECTION:activity-->
 
 #### Technology stack:
