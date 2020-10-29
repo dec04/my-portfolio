@@ -7,13 +7,6 @@ class Cursor extends React.Component {
     }
 
     componentDidMount() {
-        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-            // true for mobile device
-            // alert("mobile")
-        }else{
-            // false for not mobile device
-            // alert("not mobile")
-        }
 
         //region CURSOR
         let cursor = document.querySelector(".cursor__ball--small"),
@@ -78,7 +71,7 @@ class Cursor extends React.Component {
                 e.target.getAttribute("data-hoverable") :
                 ""
         }))
-        hoverable.forEach(el => el.addEventListener("mouseleave", (e) => {
+        hoverable.forEach(el => el.addEventListener("mouseleave", () => {
             TweenMax.to(follower, .3, {
                 scale: 1,
                 fill: "rgba(255,255,255,0)"

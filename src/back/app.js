@@ -10,11 +10,12 @@ import escape from "escape-html"
 
 const path = require("path")
 const app = express()
+app.disable("x-powered-by");
 const port = process.env.PORT || 8000
 
 // set up rate limiter: maximum of 100 requests per minute
 let limiter = new RateLimit({
-    windowMs: 1*60*1000, // 1 minute
+    windowMs: 60*1000, // 1 minute
     max: 2000
 })
 

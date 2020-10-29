@@ -3,8 +3,6 @@ import axios from "axios"
 import _ from "lodash"
 import Backpax from "backpax"
 import "vaguejs/Vague"
-import Vivus from "vivus/dist/vivus.min"
-import LinkSvg from "@img/right-arrow.svg"
 
 class Lab extends React.Component {
     constructor(props) {
@@ -58,29 +56,6 @@ class Lab extends React.Component {
             })
             new Backpax("#lab-bg")
         })
-
-        let links = document.querySelectorAll(".lab-link")
-        links.forEach(l => {
-
-        })
-    }
-
-    linkHoverHandler(e) {
-        // if (!!e.target.querySelector(".lab-link"))
-        //     new Vivus(e.target.querySelector(".lab-link"), {
-        //         file: LinkSvg,
-        //         type: 'delayed',
-        //         duration: 80,
-        //         onReady: function (myVivus) {
-        //             myVivus.el.setAttribute('width', '30px')
-        //             myVivus.el.setAttribute('filter', 'invert(100%) sepia(83%) saturate(0%) hue-rotate(298deg) brightness(109%) contrast(101%)')
-        //         }
-        //     })
-    }
-
-    linkLeaveHandler(e) {
-        // if (!!e.target.querySelector(".lab-link"))
-        //     e.target.querySelector(".lab-link").innerHTML = ""
     }
 
     render() {
@@ -103,33 +78,25 @@ class Lab extends React.Component {
                             <div className="px-5 pl-lg-5 pl-md-5 pr-md-0 px-xl-1 col-12 col-md-6 col-lg-6 col-xl-4 offset-xl-2">
                                 <h2 className="lab-small-header">Web</h2>
                                 <div className="divider"> </div>
-                                <div className="lab-link-wrapper"
-                                     onMouseEnter={this.linkHoverHandler}
-                                     onMouseLeave={this.linkLeaveHandler}>
+                                <div className="lab-link-wrapper">
                                     <a href="https://altaygaz22.ru" target="_blank" rel="noopener" className="hoverable" data-hoverable="link &rarr;">Site
                                         altaygaz22.ru <span
                                             className="ec ec-fuelpump"> </span> </a>
                                     <div className="lab-link"> </div>
                                 </div>
-                                <div className="lab-link-wrapper"
-                                     onMouseEnter={this.linkHoverHandler}
-                                     onMouseLeave={this.linkLeaveHandler}>
+                                <div className="lab-link-wrapper">
                                     <a href="https://sibgaz.ru/gaz/" target="_blank" rel="noopener" className="hoverable" data-hoverable="link &rarr;">Site
                                         sibgaz.ru/gaz/ <span
                                             className="ec ec-fuelpump"> </span> </a>
                                     <div className="lab-link"> </div>
                                 </div>
-                                <div className="lab-link-wrapper"
-                                     onMouseEnter={this.linkHoverHandler}
-                                     onMouseLeave={this.linkLeaveHandler}>
+                                <div className="lab-link-wrapper">
                                     <a href="#" className="hoverable" target="_blank" rel="noopener" data-hoverable="link &rarr;">Reworking akgs.ru
                                         [WIP <span
-                                            className="ec ec-no-entry"></span>]</a>
+                                            className="ec ec-no-entry"> </span>]</a>
                                     <div className="lab-link"> </div>
                                 </div>
-                                <div className="lab-link-wrapper"
-                                     onMouseEnter={this.linkHoverHandler}
-                                     onMouseLeave={this.linkLeaveHandler}>
+                                <div className="lab-link-wrapper">
                                     <a href="https://github.com/dec04/webpack-base-app" className="hoverable" target="_blank" rel="noopener"
                                        data-hoverable="link &rarr;">Webpack base app <span
                                         className="ec ec-package"> </span> <span
@@ -140,31 +107,23 @@ class Lab extends React.Component {
                             <div className="px-5 pr-lg-5 pr-md-5 pl-md-0 px-xl-1 col-12 col-md-6 mt-3 col-lg-6 mt-md-0 col-xl-4">
                                 <h2 className="lab-small-header">Android</h2>
                                 <div className="divider"> </div>
-                                <div className="lab-link-wrapper"
-                                     onMouseEnter={this.linkHoverHandler}
-                                     onMouseLeave={this.linkLeaveHandler}>
+                                <div className="lab-link-wrapper">
                                     <a href="https://play.google.com/store/apps/details?id=com.decoy.gasbaloonapp.a" target="_blank" rel="noopener"
                                        className="hoverable" data-hoverable="link &rarr;">Gas balloon app (akgs.ru)</a>
                                     <div className="lab-link"> </div>
                                 </div>
-                                <div className="lab-link-wrapper"
-                                     onMouseEnter={this.linkHoverHandler}
-                                     onMouseLeave={this.linkLeaveHandler}>
+                                <div className="lab-link-wrapper">
                                     <a href="https://play.google.com/store/apps/details?id=com.decoy.gasbaloonapp.n" target="_blank" rel="noopener"
                                        className="hoverable" data-hoverable="link &rarr;">Gas balloon app (sibgaz.ru)</a>
                                     <div className="lab-link"> </div>
                                 </div>
-                                <div className="lab-link-wrapper"
-                                     onMouseEnter={this.linkHoverHandler}
-                                     onMouseLeave={this.linkLeaveHandler}>
+                                <div className="lab-link-wrapper">
                                     <a href="https://github.com/dec04/PermissionUtilsLibrary" className="hoverable" target="_blank" rel="noopener"
                                        data-hoverable="link &rarr;">Android permission utils <span
                                         className="ec ec-iphone"> </span> </a>
                                     <div className="lab-link"> </div>
                                 </div>
-                                <div className="lab-link-wrapper"
-                                     onMouseEnter={this.linkHoverHandler}
-                                     onMouseLeave={this.linkLeaveHandler}>
+                                <div className="lab-link-wrapper">
                                     <a href="https://github.com/dec04/vacancy-test-app" className="hoverable" target="_blank" rel="noopener"
                                        data-hoverable="link &rarr;">Small vacancy test app <span
                                         className="ec ec-memo"> </span>
@@ -176,9 +135,7 @@ class Lab extends React.Component {
                             <div className="px-5 px-xl-1 col-12 mt-3 col-lg-12 col-xl-8 offset-xl-2 mt-lg-4">
                                 <h2 className="lab-small-header">Other stuff</h2>
                                 <div className="divider"> </div>
-                                <div className="lab-link-wrapper"
-                                     onMouseEnter={this.linkHoverHandler}
-                                     onMouseLeave={this.linkLeaveHandler}>
+                                <div className="lab-link-wrapper">
                                     <a href="https://github.com/dec04/Flutter-Travel-App" className="hoverable" target="_blank" rel="noopener"
                                        data-hoverable="link &rarr;">Flutter travel app [<span
                                         className="ec ec-building-construction"> </span> concept]</a>
