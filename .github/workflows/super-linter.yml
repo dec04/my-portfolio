@@ -45,10 +45,10 @@ jobs:
       - name: Lint Code Base
         uses: github/super-linter@v3
         env:
-          VALIDATE_ALL_CODEBASE: true
-          LOG_FILE: super-linter.log
+          VALIDATE_ALL_CODEBASE: false
+          LOG_FILE: sl.log
           OUTPUT_FORMAT: tap
-          OUTPUT_FOLDER: /report
+          OUTPUT_FOLDER: reports
           OUTPUT_DETAILS: simpler
           VALIDATE_CSS: true
           VALIDATE_ENV: true
