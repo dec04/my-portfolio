@@ -46,7 +46,7 @@ jobs:
         uses: github/super-linter@v3
         env:
           FILTER_REGEX_INCLUDE: .*src/.*
-          LOG_FILE: sl.log
+          LOG_FILE: report.log
           OUTPUT_FORMAT: tap
           OUTPUT_FOLDER: reports
           OUTPUT_DETAILS: simpler
