@@ -49,6 +49,8 @@ jobs:
         uses: github/super-linter@v3
         env:
           VALIDATE_ALL_CODEBASE: true
+          LOG_FILE: super-linter.log
+          OUTPUT_FOLDER: slReport
           VALIDATE_CSS: true
           VALIDATE_ENV: true
           VALIDATE_HTML: true
