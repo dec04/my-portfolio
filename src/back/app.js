@@ -15,8 +15,8 @@ const port = process.env.PORT || 8000
 
 // set up rate limiter: maximum of 100 requests per minute
 let limiter = new RateLimit({
-    windowMs: 60*1000, // 1 minute
-    max: 2000
+    windowMs: 60*1000,  // 1 minute
+    max: 2000           // 2000 request per minute
 })
 
 // apply rate limiter to all requests
