@@ -13,8 +13,45 @@ import MobileImg1 from '@img/patterns/mobile.jpg';
 import MobileImg2 from '@img/patterns/mobile2.jpg';
 import MobileImg3 from '@img/patterns/mobile3.jpg';
 import MobileImg4 from '@img/patterns/mobile4.jpg';
+import AkgsMockup from '@img/mockups/akgsMockup.jpg';
+import AkgsMobile1 from '@img/mockups/akgsMobile1.jpg';
+import AkgsMobile2 from '@img/mockups/akgsMobile2.jpg';
+import AkgsMobile3 from '@img/mockups/akgsMobile3.jpg';
+import AkgsMobile4 from '@img/mockups/akgsMobile4.jpg';
+import AkgsMobile5 from '@img/mockups/akgsMobile5.jpg';
 
 const WorkMainSlider = [
+    {
+        name:        'Website for AKGS',
+        description: [
+            'Reworking of the old website',
+            'of AltaiKrayGazService',
+        ],
+        image:       [
+            AkgsMockup
+        ],
+        patterns:    [],
+        logo:        WebSvg,
+        link:        'https://akgs.ru'
+    },
+    {
+        name:        'Android app for gk-gazoil.ru',
+        description: [
+            'Creating android application for',
+            'subscribers Gazoil group of companies'
+        ],
+        image:       [
+            AkgsMobile1
+        ],
+        patterns:    [
+            AkgsMobile2,
+            AkgsMobile3,
+            AkgsMobile4,
+            AkgsMobile5
+        ],
+        logo:        MobileSvg,
+        link:        'work/3'
+    },
     {
         name:        'Order gas balloon app',
         description: [

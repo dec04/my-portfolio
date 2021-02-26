@@ -6,6 +6,11 @@ import mobileMockup2 from '@img/mockups/mobileMockups2.jpg';
 import mobileMockup3 from '@img/mockups/mobileMockups3.jpg';
 import mobileMockup4 from '@img/mockups/mobileMockups4.jpg';
 import mobileMockup5 from '@img/mockups/mobileMockups5.jpg';
+import akgsMockup1 from '@img/mockups/akgsMobile1.jpg';
+import akgsMockup2 from '@img/mockups/akgsMobile2.jpg';
+import akgsMockup3 from '@img/mockups/akgsMobile3.jpg';
+import akgsMockup4 from '@img/mockups/akgsMobile4.jpg';
+import akgsMockup5 from '@img/mockups/akgsMobile5.jpg';
 
 const worksList = [
     {},
@@ -38,7 +43,7 @@ const worksList = [
             {
                 img:         mobileMockup1,
                 header:      'For Android users',
-                description: 'Mobile application or order gas cylinders at home.'
+                description: 'Mobile application for order gas cylinders at home.'
             },
             {
                 img:         mobileMockup2,
@@ -59,6 +64,37 @@ const worksList = [
                 img:         mobileMockup5,
                 header:      'Edit',
                 description: 'Edit order, leave comment, pay for order.'
+            }
+        ]
+    },
+    {
+        title:       'Android app for gk-gazoil.ru',
+        description: 'Android application for subscribers Gazoil group of companies.',
+        elements:    [
+            {
+                img:         akgsMockup1,
+                header:      'For Android users',
+                description: 'Mobile application for tracking refuel activity and get bonus.'
+            },
+            {
+                img:         akgsMockup2,
+                header:      'Gas stations',
+                description: 'Get all Gazoil gas stations on interactive map. Check phone, track route.'
+            },
+            {
+                img:         akgsMockup3,
+                header:      'Office',
+                description: 'Get all information about Gazoil regional offices.'
+            },
+            {
+                img:         akgsMockup4,
+                header:      'Dark theme',
+                description: 'Too bright? Turn on dark mode.'
+            },
+            {
+                img:         akgsMockup5,
+                header:      'All in one',
+                description: 'Refuel car free by bonus points, track your refuel activity.'
             }
         ]
     }
