@@ -24,13 +24,13 @@ class App extends React.Component {
 
     componentDidMount() {
         new TypeIt("#aboutSectionContent")
-            .delete(1)
-            .pause(1500)
-            .type("Hi").pause(2000).type(", my name is Via").pause(250).delete(1).type("atl").pause(250).delete(3).type("taliy.")
-            .break().pause(300)
-            .type("Sometimes I dei").delete(1).type("sgn").move(-2).type("i").move(2).type(" and develop some stuff.")
-            .pause(700).break().type("Let me show You...")
-            .go()
+                .delete(1)
+                .pause(1500)
+                .type("Hi").pause(2000).type(", my name is Via").pause(250).delete(1).type("atl").pause(250).delete(3).type("taliy.")
+                .break().pause(300)
+                .type("Sometimes I dei").delete(1).type("sgn").move(-2).type("i").move(2).type(" and develop some stuff.")
+                .pause(700).break().type("Let me show You...")
+                .go()
 
         // set bg wrapper height
         let workFgHeight = document.getElementById("work-fg").offsetHeight
@@ -71,45 +71,45 @@ class App extends React.Component {
     Main() {
         //region skillsSectionCode
         const skillsSectionCode =
-            "class Vitaly Sokolov {\n" +
-            "··// I'm ambitious and love new challenges :)\n" +
-            "··// My vast variety of skills is continuously expanding.\n" +
-            "··constructor() {\n" +
-            "····this.name = 'Vitaly Sokolov'\n" +
-            "····this.dayOfBirthTimestamp = 651117600\n" +
-            "····this.email = 'dmedia.decoy@gmail.com'\n" +
-            "··}\n" +
-            "··workExperience() {\n" +
-            "····return [\n" +
-            "······{ '2019-now' : 'Full-stack Developer/Android developer' },\n" +
-            "······{ '2010-2018' : 'System Administrator/Security chief' }\n" +
-            "····]\n" +
-            "··}\n" +
-            "··education() {\n" +
-            "····return [\n" +
-            "······{ '2018': 'Siberian State University of Telecommunications and Informatics' },\n" +
-            "······{ '2010': 'Gorno-Altaysk Economic College' },\n" +
-            "····]\n" +
-            "··}\n" +
-            "··skills() {\n" +
-            "····return [\n" +
-            "........'HTML/CSS/JS',\n" +
-            "........'React',\n" +
-            "........'Node.js',\n" +
-            "........'jQuery',\n" +
-            "........'Bootstrap',\n" +
-            "........'Sass',\n" +
-            "........'Express',\n" +
-            "........'PHP',\n" +
-            "........'MySql/SqLite/Postgres',\n" +
-            "........'GIT',\n" +
-            "........'Webpack',\n" +
-            "........'Java (Android)',\n" +
-            "........'Jetpack Room',\n" +
-            "........'Linux'\n" +
-            ".... ]\n" +
-            "··}\n" +
-            "}\n"
+                "class Vitaly Sokolov {\n" +
+                "··// I'm ambitious and love new challenges :)\n" +
+                "··// My vast variety of skills is continuously expanding.\n" +
+                "··constructor() {\n" +
+                "····this.name = 'Vitaly Sokolov'\n" +
+                "····this.dayOfBirthTimestamp = 651117600\n" +
+                "····this.email = 'dmedia.decoy@gmail.com'\n" +
+                "··}\n" +
+                "··workExperience() {\n" +
+                "····return [\n" +
+                "······{ '2019-now' : 'Full-stack Developer/Android developer' },\n" +
+                "······{ '2010-2018' : 'System Administrator/Security chief' }\n" +
+                "····]\n" +
+                "··}\n" +
+                "··education() {\n" +
+                "····return [\n" +
+                "······{ '2018': 'Siberian State University of Telecommunications and Informatics' },\n" +
+                "······{ '2010': 'Gorno-Altaysk Economic College' },\n" +
+                "····]\n" +
+                "··}\n" +
+                "··skills() {\n" +
+                "····return [\n" +
+                "........'HTML/CSS/JS',\n" +
+                "........'React',\n" +
+                "........'Node.js',\n" +
+                "........'jQuery',\n" +
+                "........'Bootstrap',\n" +
+                "........'Sass',\n" +
+                "........'Express',\n" +
+                "........'PHP',\n" +
+                "........'MySql/SqLite/Postgres',\n" +
+                "........'GIT',\n" +
+                "........'Webpack',\n" +
+                "........'Java (Android)',\n" +
+                "........'Jetpack Room',\n" +
+                "........'Linux'\n" +
+                ".... ]\n" +
+                "··}\n" +
+                "}\n"
         //endregion
 
         return <div>
@@ -117,10 +117,10 @@ class App extends React.Component {
                 <this.Header/>
                 <div className="container">
                     <RoadmapSection
-                        scroll={true}>
+                            scroll={true}>
                         <h1>About</h1>
                         <hr/>
-                        <p id="aboutSectionContent"></p>
+                        <p id="aboutSectionContent"/>
                     </RoadmapSection>
                 </div>
                 <div onMouseEnter={this.handleMouseOver} id="work-parent" className="container-fluid">
@@ -128,7 +128,7 @@ class App extends React.Component {
                          className="work-bg"
                          style={{
                              backgroundImage: `${this.state.curBackground}`
-                         }}></div>
+                         }}/>
                     <div id="work-fg" className="container">
                         <RoadmapSection>
                             <h1>Work</h1>
@@ -139,8 +139,8 @@ class App extends React.Component {
                     <RoadmapSection>
                         <h1>Skills</h1>
                         <SyntaxHighlighter
-                            language="javascript"
-                            style={paraisoDark}>
+                                language="javascript"
+                                style={paraisoDark}>
                             {skillsSectionCode}
                         </SyntaxHighlighter>
                     </RoadmapSection>
@@ -157,7 +157,7 @@ class App extends React.Component {
 
     render() {
         return (
-            <this.Main/>
+                <this.Main/>
         )
     }
 }

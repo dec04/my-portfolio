@@ -10,16 +10,16 @@ class WorkPage extends Component {
     }
 
     render() {
-        return(
-            <div id="app">
-                <Menu />
-                <Cursor />
-                <div id="main-fg"
-                     className="main-fg">
-                    <Header />
-                    <WorkContainer workId={this.props.workId} />
+        return (
+                <div id="app">
+                    <Menu/>
+                    <Cursor/>
+                    <div id="main-fg"
+                         className="main-fg">
+                        <Header/>
+                        <WorkContainer workId={this.props.workId}/>
+                    </div>
                 </div>
-            </div>
         )
     }
 }

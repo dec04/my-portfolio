@@ -15,13 +15,13 @@ class RoadmapSection extends React.Component {
 
     render() {
         return (
-            <div id="roadmap-section">
-                <div className="roadmap pl-5">
-                    <i className="fas fas-roadmap fa-times-circle"> </i>
-                    {this.props.scroll === true && <this.ScrollIcon/>}
-                    {this.props.children}
+                <div id="roadmap-section">
+                    <div className="roadmap pl-5">
+                        <i className="fas fas-roadmap fa-times-circle"> </i>
+                        {this.props.scroll === true && <this.ScrollIcon/>}
+                        {this.props.children}
+                    </div>
                 </div>
-            </div>
         )
     }
 }

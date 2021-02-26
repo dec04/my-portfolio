@@ -8,11 +8,11 @@ class Logo extends React.Component {
 
     render() {
         return (
-            <div id="logo"
-                 data-hoverable="Reload"
-                 className="hoverable">
-                <img src={LogoImg} alt={LogoImg}/>
-            </div>
+                <div id="logo"
+                     data-hoverable="Reload"
+                     className="hoverable">
+                    <img src={LogoImg} alt={LogoImg}/>
+                </div>
         )
     }
 }

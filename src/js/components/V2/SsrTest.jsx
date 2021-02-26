@@ -11,7 +11,7 @@ class SsrTest extends React.Component {
 
     render() {
         return (
-            <div id="ssr-test">{this.props.workId}</div>
+                <div id="ssr-test">{this.props.workId}</div>
         )
     }
 }

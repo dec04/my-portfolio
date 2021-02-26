@@ -18,12 +18,12 @@ class MenuBg extends React.Component {
 
     render() {
         return (
-            <div id="menu-bg"
-                 style={{
-                     backgroundImage: `${this.props.img}`,
-                     backgroundColor: `${this.state.bgColor}`
-                 }}
-                 className="main-bg"></div>
+                <div id="menu-bg"
+                     style={{
+                         backgroundImage: `${this.props.img}`,
+                         backgroundColor: `${this.state.bgColor}`
+                     }}
+                     className="main-bg"/>
 
         )
     }

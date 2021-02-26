@@ -274,6 +274,7 @@ button, a {
     }
   }
 }
+
 //endregion
 
 //region AppV2
@@ -392,11 +393,11 @@ button, a {
 
     #menu-fg {
       position: absolute;
-      background: rgb(255,255,255);
-      background: -moz-linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 45%);
-      background: -webkit-linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 45%);
-      background: linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 45%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#000000",GradientType=1);
+      background: rgb(255, 255, 255);
+      background: -moz-linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 45%);
+      background: -webkit-linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 45%);
+      background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 45%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#000000", GradientType=1);
       width: 100% !important;
       height: 100% !important;
       color: #fff !important;
@@ -409,6 +410,7 @@ button, a {
         span {
           transition: all .3s ease;
           color: #fff !important;
+
           svg {
             transition: all .3s ease;
             color: #fff !important;
@@ -572,6 +574,7 @@ button, a {
         font-size: 1.4rem;
         color: #fff !important;
         line-height: 2.8rem;
+
         &:hover {
           color: $themeTextSecondaryColor !important;
         }
@@ -598,6 +601,7 @@ button, a {
         margin-top: 200px;
         display: inline-block;
         width: auto;
+
         span {
           transition: color .3s ease;
           color: $themeTextSecondaryColor;
@@ -641,6 +645,7 @@ button, a {
             font-family: Monserat-black, sans-serif;
             color: #fff !important;
             line-height: 2.4rem;
+
             &:hover {
               color: $themeTextSecondaryColor !important;
             }
@@ -723,11 +728,11 @@ button, a {
           left: 0;
           width: 100%;
           height: 100%;
-          background: rgb(255,255,255);
-          background: -moz-linear-gradient(195deg, rgba(255,255,255,0) 0%, rgba(0,0,0,.75) 100%);
-          background: -webkit-linear-gradient(195deg, rgba(255,255,255,0) 0%, rgba(0,0,0,.75) 100%);
-          background: linear-gradient(195deg, rgba(255,255,255,0) 0%, rgba(0,0,0,.75) 100%);
-          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#000000",GradientType=1);
+          background: rgb(255, 255, 255);
+          background: -moz-linear-gradient(195deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, .75) 100%);
+          background: -webkit-linear-gradient(195deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, .75) 100%);
+          background: linear-gradient(195deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, .75) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#000000", GradientType=1);
         }
 
         img {
@@ -739,6 +744,7 @@ button, a {
     }
   }
 }
+
 //endregion
 
 //region Responsive
@@ -944,6 +950,7 @@ button, a {
 
     #about {
       overflow-x: auto;
+
       pre {
         font-size: .7rem !important;
       }
@@ -1031,6 +1038,7 @@ button, a {
 
     #about {
       overflow-x: auto;
+
       pre {
         font-size: .8rem !important;
       }
@@ -1084,4 +1092,5 @@ button, a {
   //endregion
 
 }
+
 //endregion

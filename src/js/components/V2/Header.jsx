@@ -16,20 +16,20 @@ class Header extends React.Component {
 
     render() {
         return (
-            <div className="container-fluid">
-                <div className="row">
-                    <div id="header"
-                         className="col-10 offset-1 d-flex justify-content-between align-items-center align-content-center margin-t-140">
-                        <a href="/"><Logo/></a>
-                        <button onClick={this.allWorksClickHandler}
-                                id="all-works"
-                                className="hoverable"
-                                data-hoverable="menu">
-                            <i className="fas fa-bars"> </i>
-                        </button>
+                <div className="container-fluid">
+                    <div className="row">
+                        <div id="header"
+                             className="col-10 offset-1 d-flex justify-content-between align-items-center align-content-center margin-t-140">
+                            <a href="/"><Logo/></a>
+                            <button onClick={this.allWorksClickHandler}
+                                    id="all-works"
+                                    className="hoverable"
+                                    data-hoverable="menu">
+                                <i className="fas fa-bars"> </i>
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
         )
     }
 }

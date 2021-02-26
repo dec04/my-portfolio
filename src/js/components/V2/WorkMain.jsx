@@ -27,13 +27,13 @@ class WorkMain extends React.Component {
                 instance.destroy();
             }
         })
-            .delete(1)
-            .pause(2500)
-            .type("Hi").pause(2000).type(", my name is Via").pause(250).delete(1).type("atl").pause(250).delete(3).type("taliy.")
-            .break().pause(300)
-            .type("Sometimes I dei").delete(1).type("sgn").move(-2).type("i").move(2).type(" and develop some stuff.")
-            .pause(700).break().type("Let me show You...")
-            .go()
+                .delete(1)
+                .pause(2500)
+                .type("Hi").pause(2000).type(", my name is Via").pause(250).delete(1).type("atl").pause(250).delete(3).type("taliy.")
+                .break().pause(300)
+                .type("Sometimes I dei").delete(1).type("sgn").move(-2).type("i").move(2).type(" and develop some stuff.")
+                .pause(700).break().type("Let me show You...")
+                .go()
 
         let workProjectParallax = new Parallax(document.getElementById("work-project"))
         let sceneAppName = new Parallax(document.getElementById("scene-app-name"))
@@ -95,68 +95,68 @@ class WorkMain extends React.Component {
         })
 
         $("#work-bg")
-            .stop()
-            .animate({ backgroundSize: "100%" }, 300)
-            .animate({ backgroundSize: "115%" }, 10000);
+                .stop()
+                .animate({backgroundSize: "100%"}, 300)
+                .animate({backgroundSize: "115%"}, 10000);
     }
 
     render() {
         return (
-            <div id="work-main" className="container">
-                <div className="row">
-                    <div id="scene-app-name"
-                         data-pointer-events="true"
-                         data-hover-only="true"
-                         data-relative-input="true"
-                         className="col-8 offset-2 mt-4 mt-md-0">
-                        <p id="work-main-type-it-app-name"
-                           data-depth=".03"
-                           className="text-center"> </p>
-                    </div>
-                </div>
-                <div className="row">
-                    <div id="scene-app-desc"
-                         data-pointer-events="true"
-                         data-hover-only="true"
-                         data-relative-input="true"
-                         className="col-12 col-lg-6">
-                        <p id="work-main-type-it-app-description"
-                           data-depth=".06"> </p>
-                    </div>
-                    <div className="col-12 col-lg-6">
-                        <div id="work-project"
-                             className="d-flex d-xl-block justify-content-center"
+                <div id="work-main" className="container">
+                    <div className="row">
+                        <div id="scene-app-name"
                              data-pointer-events="true"
                              data-hover-only="true"
-                             data-relative-input="true">
-                            <div id="work-project-logo"
-                                 data-depth=".18"
-                                 style={{backgroundImage: `url()`}}
-                            >
+                             data-relative-input="true"
+                             className="col-8 offset-2 mt-4 mt-md-0">
+                            <p id="work-main-type-it-app-name"
+                               data-depth=".03"
+                               className="text-center"/>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div id="scene-app-desc"
+                             data-pointer-events="true"
+                             data-hover-only="true"
+                             data-relative-input="true"
+                             className="col-12 col-lg-6">
+                            <p id="work-main-type-it-app-description"
+                               data-depth=".06"/>
+                        </div>
+                        <div className="col-12 col-lg-6">
+                            <div id="work-project"
+                                 className="d-flex d-xl-block justify-content-center"
+                                 data-pointer-events="true"
+                                 data-hover-only="true"
+                                 data-relative-input="true">
+                                <div id="work-project-logo"
+                                     data-depth=".18"
+                                     style={{backgroundImage: `url()`}}
+                                >
+                                </div>
+                                <a id="work-project-button"
+                                   href={!!this.state.link ? this.state.link : "/"}
+                                   data-depth=".4"
+                                   className="px-3 py-1 hoverable">enter <i className="ml-2 fas fa-level-down-alt"> </i></a>
                             </div>
-                            <a id="work-project-button"
-                               href={!!this.state.link ? this.state.link : "/"}
-                               data-depth=".4"
-                               className="px-3 py-1 hoverable">enter <i className="ml-2 fas fa-level-down-alt"> </i></a>
+                        </div>
+                    </div>
+                    <div className="row mt-5 mt-lg-0">
+                        <div className="col d-flex justify-content-center align-items-center justify-content-lg-end align-items-lg-end">
+                            <div className="buttons">
+                                <button onClick={() => {
+                                    this.handleClick("dec")
+                                }} className="mx-3 hoverable"><i
+                                        className="fas fa-long-arrow-alt-left"> </i> prev
+                                </button>
+                                <button onClick={() => {
+                                    this.handleClick("inc")
+                                }} className="mx-3 hoverable">next <i
+                                        className="fas fa-long-arrow-alt-right"> </i></button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className="row mt-5 mt-lg-0">
-                    <div className="col d-flex justify-content-center align-items-center justify-content-lg-end align-items-lg-end">
-                        <div className="buttons">
-                            <button onClick={() => {
-                                this.handleClick("dec")
-                            }} className="mx-3 hoverable"><i
-                                className="fas fa-long-arrow-alt-left"> </i> prev
-                            </button>
-                            <button onClick={() => {
-                                this.handleClick("inc")
-                            }} className="mx-3 hoverable">next <i
-                                className="fas fa-long-arrow-alt-right"> </i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
         )
     }

@@ -7,9 +7,9 @@ class CircleImage extends React.Component {
 
     render() {
         return (
-            <img className="circle-img"
-                 src={this.props.img}
-                 alt={this.props.img}/>
+                <img className="circle-img"
+                     src={this.props.img}
+                     alt={this.props.img}/>
         )
     }
 }

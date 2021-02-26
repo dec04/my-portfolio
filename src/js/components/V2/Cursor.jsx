@@ -10,22 +10,22 @@ class Cursor extends React.Component {
 
         //region CURSOR
         let cursor = document.querySelector(".cursor__ball--small"),
-            dot = document.querySelector("#dot"),
-            cursorText = document.querySelector(".cursor-text"),
-            follower =  document.querySelector(".cursor__ball--big"),
-            hoverable = document.querySelectorAll(".hoverable")
+                dot = document.querySelector("#dot"),
+                cursorText = document.querySelector(".cursor-text"),
+                follower = document.querySelector(".cursor__ball--big"),
+                hoverable = document.querySelectorAll(".hoverable")
 
         let posX = 0,
-            posY = 0,
-            mPosX = 0,
-            mPosY = 0
+                posY = 0,
+                mPosX = 0,
+                mPosY = 0
 
         let mouseX = 0,
-            mouseY = 0
+                mouseY = 0
 
         TweenMax.to({}, 0.016, {
             repeat: -1,
-            onRepeat: function() {
+            onRepeat: function () {
                 posX += (mouseX - posX) / 15
                 posY += (mouseY - posY) / 15
 
@@ -68,8 +68,8 @@ class Cursor extends React.Component {
             dot.style.opacity = .8
             cursorText.style.opacity = 1
             cursorText.innerHTML = !!e.target.getAttribute("data-hoverable") ?
-                e.target.getAttribute("data-hoverable") :
-                ""
+                    e.target.getAttribute("data-hoverable") :
+                    ""
         }))
         hoverable.forEach(el => el.addEventListener("mouseleave", () => {
             TweenMax.to(follower, .3, {
@@ -83,21 +83,21 @@ class Cursor extends React.Component {
     }
 
     render() {
-        return(
-            <div className="cursor">
-                <div className="cursor__ball cursor__ball--big ">
-                    <svg height="40" width="40">
-                        <circle cx="20" cy="20" r="12" strokeWidth=".5"> </circle>
-                    </svg>
-                </div>
+        return (
+                <div className="cursor">
+                    <div className="cursor__ball cursor__ball--big ">
+                        <svg height="40" width="40">
+                            <circle cx="20" cy="20" r="12" strokeWidth=".5"></circle>
+                        </svg>
+                    </div>
 
-                <div className="cursor__ball cursor__ball--small">
-                    <svg id="dot" height="10" width="10">
-                        <circle cx="5" cy="5" r="4" strokeWidth="0"> </circle>
-                    </svg>
-                    <span className="cursor-text d-flex justify-content-center align-content-center align-items-center text-center"> </span>
+                    <div className="cursor__ball cursor__ball--small">
+                        <svg id="dot" height="10" width="10">
+                            <circle cx="5" cy="5" r="4" strokeWidth="0"></circle>
+                        </svg>
+                        <span className="cursor-text d-flex justify-content-center align-content-center align-items-center text-center"> </span>
+                    </div>
                 </div>
-            </div>
         )
     }
 }

@@ -53,26 +53,26 @@ class AppV2 extends React.Component {
 
     render() {
         return (
-            <div id="app">
-                <Menu />
-                <Cursor />
-                <MainBg
-                    ref={this.mainBgElement}
-                    img={this.state.mainBg}/>
-                <div id="main-fg"
-                     className="main-fg">
-                    <WorkBg img={this.state.workBg}>
-                        <Header/>
-                        <WorkMain bgHandle={this.changeBgHandle}/>
-                    </WorkBg>
-                    <div id="mouse-listener-helper"
-                         onMouseEnter={this.mouseListenerEnter}
-                         onMouseLeave={this.mouseListenerExit}>
-                        <Lab/>
-                        <Footer img={GeoPattern.generate(_.random(10000).toString(), {color: "#000"}).toDataUrl()}/>
+                <div id="app">
+                    <Menu/>
+                    <Cursor/>
+                    <MainBg
+                            ref={this.mainBgElement}
+                            img={this.state.mainBg}/>
+                    <div id="main-fg"
+                         className="main-fg">
+                        <WorkBg img={this.state.workBg}>
+                            <Header/>
+                            <WorkMain bgHandle={this.changeBgHandle}/>
+                        </WorkBg>
+                        <div id="mouse-listener-helper"
+                             onMouseEnter={this.mouseListenerEnter}
+                             onMouseLeave={this.mouseListenerExit}>
+                            <Lab/>
+                            <Footer img={GeoPattern.generate(_.random(10000).toString(), {color: "#000"}).toDataUrl()}/>
+                        </div>
                     </div>
                 </div>
-            </div>
         )
     }
 }
