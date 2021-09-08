@@ -193,17 +193,17 @@ class Footer extends React.Component {
                                                              className="social-icon-wrapper hoverable"
                                                              data-hoverable="link &rarr;"/>
                                                     </a>
-                                                    <a href="https://www.facebook.com/dmediadecoy" target="_blank"
-                                                       rel="noopener">
-                                                        <div id="facebook-social"
-                                                             className="social-icon-wrapper hoverable"
-                                                             data-hoverable="link &rarr;"/>
-                                                    </a>
-                                                    <a href="https://twitter.com/04_dec" target="_blank" rel="noopener">
-                                                        <div id="twitter-social"
-                                                             className="social-icon-wrapper hoverable"
-                                                             data-hoverable="link &rarr;"/>
-                                                    </a>
+                                                    {/*<a href="https://www.facebook.com/dmediadecoy" target="_blank"*/}
+                                                    {/*   rel="noopener">*/}
+                                                    {/*    <div id="facebook-social"*/}
+                                                    {/*         className="social-icon-wrapper hoverable"*/}
+                                                    {/*         data-hoverable="link &rarr;"/>*/}
+                                                    {/*</a>*/}
+                                                    {/*<a href="https://twitter.com/04_dec" target="_blank" rel="noopener">*/}
+                                                    {/*    <div id="twitter-social"*/}
+                                                    {/*         className="social-icon-wrapper hoverable"*/}
+                                                    {/*         data-hoverable="link &rarr;"/>*/}
+                                                    {/*</a>*/}
                                                     <a href="https://www.instagram.com/dmedia.decoy/" target="_blank"
                                                        rel="noopener">
                                                         <div id="instagram-social"
