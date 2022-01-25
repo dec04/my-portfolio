@@ -27,7 +27,7 @@ class Footer extends React.Component {
     render() {
         //region skillsSectionCode
         const skillsSectionCode =
-                "class Vitaly Sokolov {\n" +
+                "class Vitaly {\n" +
                 "··// I'm ambitious and love new challenges :)\n" +
                 "··// My vast variety of skills is continuously expanding.\n" +
                 "··constructor() {\n" +
@@ -37,7 +37,8 @@ class Footer extends React.Component {
                 "··}\n" +
                 "··function workExperience() {\n" +
                 "····return [\n" +
-                "······{ '2019-now' : 'Full-stack Developer/Android developer' },\n" +
+                "······{ '2021-now' : 'Expert Developer' },\n" +
+                "······{ '2019-2021' : 'Full-stack Developer/Android developer' },\n" +
                 "······{ '2010-2018' : 'System Administrator/Security chief' }\n" +
                 "····]\n" +
                 "··}\n" +
@@ -50,9 +51,10 @@ class Footer extends React.Component {
                 "··}\n" +
                 "··function skills() {\n" +
                 "····return [\n" +
+                "........'Python', 'Pl/Sql', 'Swift 5', 'Tailwind',\n" +
                 "........'HTML/CSS/JS', 'ReactJS', 'Node.js', 'jQuery', 'Bootstrap',\n" +
                 "........'Sass', 'Express', 'PHP', 'MySql/SqLite/Postgres', 'GIT',\n" +
-                "........'Webpack', 'Java (Android)', 'Jetpack Room', 'Linux'\n" +
+                "........'Webpack', 'Java (Android)', 'Jetpack Room', 'Unix'\n" +
                 ".... ]\n" +
                 "··}\n" +
                 "}\n"
