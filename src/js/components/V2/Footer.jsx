@@ -31,7 +31,7 @@ class Footer extends React.Component {
                 "··// I'm ambitious and love new challenges :)\n" +
                 "··// My vast variety of skills is continuously expanding.\n" +
                 "··constructor() {\n" +
-                "····this.name = 'Vitaly Sokolov'\n" +
+                "····this.name = 'Vitaly'\n" +
                 "····this.dayOfBirthTimestamp = 651117600\n" +
                 "····this.email = 'dmedia.decoy@gmail.com'\n" +
                 "··}\n" +
